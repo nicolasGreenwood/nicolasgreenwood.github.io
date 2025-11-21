@@ -16,7 +16,6 @@ gem "minima", github: "jekyll/minima", ref: "bf9ef989246b63536e9db61082f663f1a6d
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
-  gem 'jekyll-sitemap'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
