@@ -40,9 +40,11 @@
 }
 
 .post-link {
-    font-size: $base-font-size;
+    font-size: $base-font-size !important;
     text-transform: lowercase;
     font-style: italic;
+    margin: 0;
+    font-weight: 400;
 }
 
 .post-meta {
