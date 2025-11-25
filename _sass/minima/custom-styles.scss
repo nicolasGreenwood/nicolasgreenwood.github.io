@@ -42,4 +42,16 @@
 .post-link {
     font-size: $base-font-size;
     text-transform: lowercase;
+    font-style: italic;
+}
+
+.post-meta {
+    color: $text-color;
+}
+
+.post-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid $border-color-01;
+    display: flex;
+    justify-content: space-between;
 }
