@@ -45,7 +45,6 @@ sass:
 minima:
   skin: classic
 
-  show_excerpts: true
 
   social_links:
     - title: My GitHub
