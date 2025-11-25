@@ -26,6 +26,10 @@
     padding: 0;
 }
 
+.wrapper:after {
+    display: none;
+}
+
 .header-wrapper {
     border-bottom: 1px solid $border-color-01;
     display: flex;
