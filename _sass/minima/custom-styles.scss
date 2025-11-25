@@ -67,7 +67,7 @@ h3:has(> .post-link) {
 	max-width: 800px;
 	display: flex;
 	flex-direction: column;
-	gap: min(50px, 5vw);
+	gap: min(30px, 5vw);
 }
 
 .hero :is(h1, h2, h3, h4, h5, h6) {
@@ -81,7 +81,7 @@ h3:has(> .post-link) {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 20px;
+	gap: min(50px, 5vw);
 }
 
 .hero > div > svg {
