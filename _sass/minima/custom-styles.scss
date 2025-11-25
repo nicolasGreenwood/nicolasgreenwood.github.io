@@ -46,7 +46,7 @@
     font-weight: 400;
 }
 
-h3:has(.post-link) {
+h3:has(> .post-link) {
     margin-bottom: 0;
 }
 
