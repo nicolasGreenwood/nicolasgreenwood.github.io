@@ -43,8 +43,11 @@
     font-size: 16px !important;
     text-transform: lowercase;
     font-style: italic;
-    margin-bottom: 0;
     font-weight: 400;
+}
+
+h3:has(.post-link) {
+    margin-bottom: 0;
 }
 
 .post-meta {
@@ -57,4 +60,40 @@
     display: flex;
     justify-content: space-between;
     align-items: end;
+}
+
+.hero {
+	margin: 0 auto;
+	max-width: 800px;
+	display: flex;
+	flex-direction: column;
+	gap: min(50px, 5vw);
+}
+
+.hero :is(h1, h2, h3, h4, h5, h6) {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: lowercase;
+}
+
+.hero div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+.hero > div > svg {
+	display: block;
+	max-width: 600px;
+	flex: 1;
+}
+
+.hero div:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.hero div:nth-child(odd) {
+	flex-direction: row;
 }
