@@ -1,7 +1,7 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 .site-header {
-    border-top: 0;
+    border: 0;
 }
 
 .site-title {
@@ -13,4 +13,8 @@
 
 .nav-item {
     text-transform: lowercase;
+}
+
+.header-wrapper {
+    border-bottom: 1px solid $border-color-01;
 }
