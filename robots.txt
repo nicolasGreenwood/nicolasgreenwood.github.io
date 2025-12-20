@@ -1,3 +1,4 @@
 # robots.txt file for "Nicolas Greenwood" website, nicolasgreenwood.github.io
 User-agent: *
-Disallow: /
+Allow: /
+Sitemap: https://nicolasgreenwood.github.io/sitemap.xml
