@@ -1,0 +1,26 @@
+
+
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Miscellanea - Nicolas Greenwood",
+  "home_page_url": "https://nicolasgreenwood.github.io/?utm_source=json_feed",
+  
+  "description": "I'm an 18 year old aspiring multidisciplinary artist based in Novi Sad, Serbia. My work includes, but is not exclusive to, poetry, prose, design, programming and visual art.",
+  "icon": "https://nicolasgreenwood.github.io/img/open-graph-logo_hu_1978870e36bf97f6.png",
+  "favicon": "https://nicolasgreenwood.github.io/img/open-graph-logo_hu_1978870e36bf97f6.png",
+  "authors": [
+    {
+      "name": "Nicolas Greenwood"
+    }
+  ],
+  "language" : "en",
+  "items": [
+    {
+      "id": "15b8cbb0-8ed6-5a73-c9bd-203c6d301892",
+      "url": "https://nicolasgreenwood.github.io/miscellanea/narrative/?utm_source=json_feed",
+      "title": "Sveti Sava: Svetlost u Tami (Saint Sava: a Light in Darkness)",
+      "summary": "This is a film about Saint Sava, a Serbian prince and Orthodox monk who became the first Archbishop of the autocephalous Serbian Church. Known as the Enlightener of Serbia, he was an educator, writer, diplomat and lawmaker and is remembered as one of the greatest establishers of Serbian Orthodox identity.\nHe is venerated by the Eastern Orthodox Church on January 27, and this film was made as a school project for the occasion.",
+      "date_published": "2025-01-18T00:00:00Z"
+    }
+  ]
+}

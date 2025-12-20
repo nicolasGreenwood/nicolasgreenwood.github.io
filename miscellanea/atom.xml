@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en" xml:base="https://nicolasgreenwood.github.io/">
+    <title>Miscellanea - Nicolas Greenwood</title>
+    <subtitle type="html"><![CDATA[I'm an 18 year old aspiring multidisciplinary artist based in Novi Sad, Serbia. My work includes, but is not exclusive to, poetry, prose, design, programming and visual art.]]></subtitle>
+    <link href="/miscellanea/" rel="alternate" type="text/html" title="html" />
+    <link href="/miscellanea/rss.xml" rel="alternate" type="application/rss+xml" title="rss" />
+    <link href="/miscellanea/atom.xml" rel="self" type="text/xml" title="atom" />
+    <link href="/miscellanea/feed.json" rel="alternate" type="application/feed+json" title="jsonfeed" />
+    <icon>https://nicolasgreenwood.github.io/img/open-graph-logo_hu_1978870e36bf97f6.png</icon>
+    <logo>https://nicolasgreenwood.github.io/img/open-graph-logo_hu_1978870e36bf97f6.png</logo>
+    <author>
+        <name>Nicolas Greenwood</name>
+        <email>nicolas.greenwood@outlook.com</email>
+    </author>
+    <generator uri="https://gohugo.io" version="0.152.2">Hugo</generator>
+    <updated>2025-09-15T00:00:00Z</updated>
+    <id>urn:uuid:ac78d7d9-f589-5c8b-d97e-1c88a46e755b</id>
+    <entry>
+        
+        <category term="miscellanea" />
+        
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/miscellanea/narrative/?utm_source=atom_feed" />
+        <title type="html"><![CDATA[Sveti Sava: Svetlost u Tami (Saint Sava: a Light in Darkness)]]></title>
+        
+        
+        
+        <published>2025-01-18T00:00:00Z</published>
+        <updated>2025-01-18T00:00:00Z</updated>
+        <id>urn:uuid:15b8cbb0-8ed6-5a73-c9bd-203c6d301892</id>
+        
+                <author>
+                    <name>Nicolas Greenwood</name>
+                </author>
+        
+        <summary type="html"><![CDATA[<p>This is a film about Saint Sava, a Serbian prince and Orthodox monk who became the first Archbishop of the autocephalous Serbian Church. Known as the Enlightener of Serbia, he was an educator, writer, diplomat and lawmaker and is remembered as one of the greatest establishers of Serbian Orthodox identity.</p>
+<p>He is venerated by the Eastern Orthodox Church on January 27, and this film was made as a school project for the occasion.</p>]]></summary>
+    </entry>
+</feed>

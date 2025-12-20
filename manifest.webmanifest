@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest",
+  "id": "ac0cd6f3-edb1-5517-a9d4-29d7a97394e4",
+  "name": "Nicolas Greenwood",
+  "short_name": "Poetry, prose, and random thoughts",
+  "description": "I'm an 18 year old aspiring multidisciplinary artist based in Novi Sad, Serbia. My work includes, but is not exclusive to, poetry, prose, design, programming and visual art.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/index.html?source=pwa",
+  "display": "fullscreen",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "orientation": "natural",
+  "shortcuts": [  
+    {
+      "name": "Home",
+      "short_name" : "home",
+      "url": "/"
+    } ,
+    {
+      "name": "About",
+      "short_name" : "about",
+      "url": "/about/"
+    } ,
+    {
+      "name": "Poems",
+      "short_name" : "poems",
+      "url": "/poems/"
+    } ,
+    {
+      "name": "Articles",
+      "short_name" : "articles",
+      "url": "/articles/"
+    } ,
+    {
+      "name": "Essays",
+      "short_name" : "essays",
+      "url": "/essays/"
+    } ,
+    {
+      "name": "Miscellanea",
+      "short_name" : "miscellanea",
+      "url": "/miscellanea/"
+    } ,
+    {
+      "name": "Subscribe",
+      "short_name" : "subscribe",
+      "url": "/subscribe/"
+    } ,
+    {
+      "name": "Contact",
+      "short_name" : "contact",
+      "url": "/contact/"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}

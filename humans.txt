@@ -1,0 +1,16 @@
+
+    /* TEAM */
+
+    Author: Nicolas Greenwood
+    Contact: nicolas.greenwood@outlook.com
+    GitHub: @nicolasGreenwood
+    From: Novi Sad, Serbia
+
+    /* SITE */
+
+    Last update: 2025/12/20
+    Language: English
+    Doctype: HTML5
+    Standards: HTML5, CSS3, Open Graph protocol, Schema.org
+    Components: Hugo, Ed Theme, Lunr.js
+    Hugo version: 0.152.2

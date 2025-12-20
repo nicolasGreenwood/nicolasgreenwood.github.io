@@ -1,0 +1,26 @@
+
+
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Articles - Nicolas Greenwood",
+  "home_page_url": "https://nicolasgreenwood.github.io/?utm_source=json_feed",
+  
+  "description": "I'm an 18 year old aspiring multidisciplinary artist based in Novi Sad, Serbia. My work includes, but is not exclusive to, poetry, prose, design, programming and visual art.",
+  "icon": "https://nicolasgreenwood.github.io/img/open-graph-logo_hu_1978870e36bf97f6.png",
+  "favicon": "https://nicolasgreenwood.github.io/img/open-graph-logo_hu_1978870e36bf97f6.png",
+  "authors": [
+    {
+      "name": "Nicolas Greenwood"
+    }
+  ],
+  "language" : "en",
+  "items": [
+    {
+      "id": "585127c5-98ec-5b6e-f9c0-32f21872ced8",
+      "url": "https://nicolasgreenwood.github.io/articles/disovizija-2025-my-first-public-poetry-recital/?utm_source=json_feed",
+      "title": "Disovizija 2025: My First Public Poetry Recital",
+      "summary": "Disovizija is an annual event hosted by the Čačak City Library to promote poetry among youth. In this year\u0026rsquo;s event, I was given the opportunity to read one of my works to live audience for the very first time.\nPhoto courtesy of Čačak City Library Vladislav Petković Dis\nReading poetry out loud is an entirely different experience to reading to yourself. Poetic language isn\u0026rsquo;t always rational and predictable, and there\u0026rsquo;s something about hearing it out loud that makes you slow down a little, hang on longer to each word and appreciate its artistic courage even more.",
+      "date_published": "2025-05-01T00:00:00Z"
+    }
+  ]
+}

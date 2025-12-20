@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en" xml:base="https://nicolasgreenwood.github.io/">
+    <title>Essays - Nicolas Greenwood</title>
+    <subtitle type="html"><![CDATA[I'm an 18 year old aspiring multidisciplinary artist based in Novi Sad, Serbia. My work includes, but is not exclusive to, poetry, prose, design, programming and visual art.]]></subtitle>
+    <link href="/essays/" rel="alternate" type="text/html" title="html" />
+    <link href="/essays/rss.xml" rel="alternate" type="application/rss+xml" title="rss" />
+    <link href="/essays/atom.xml" rel="self" type="text/xml" title="atom" />
+    <link href="/essays/feed.json" rel="alternate" type="application/feed+json" title="jsonfeed" />
+    <icon>https://nicolasgreenwood.github.io/img/open-graph-logo_hu_1978870e36bf97f6.png</icon>
+    <logo>https://nicolasgreenwood.github.io/img/open-graph-logo_hu_1978870e36bf97f6.png</logo>
+    <author>
+        <name>Nicolas Greenwood</name>
+        <email>nicolas.greenwood@outlook.com</email>
+    </author>
+    <generator uri="https://gohugo.io" version="0.152.2">Hugo</generator>
+    <updated>2025-09-15T00:00:00Z</updated>
+    <id>urn:uuid:ac78d7d9-f589-5c8b-d97e-1c88a46e755b</id>
+    <entry>
+        
+        <category term="essays" />
+        
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/essays/how-to-write-poetry/?utm_source=atom_feed" />
+        <title type="html"><![CDATA[How to Write Poetry]]></title>
+        
+        
+        
+        <published>2025-04-26T00:00:00Z</published>
+        <updated>2025-04-26T00:00:00Z</updated>
+        <id>urn:uuid:323825c5-ddb3-597c-b9f8-1bd4cd7226ac</id>
+        
+                <author>
+                    <name>Nicolas Greenwood</name>
+                </author>
+        
+        <summary type="html"><![CDATA[<p>Writing poetry isn&rsquo;t easy. But, contrary to popular belief, the difficulty isn&rsquo;t so much in the structure, in the rhyming — it&rsquo;s what to write about. Just think of it: come up with a poem topic. All kinds of ideas pop into your head, from nature to love to grief. Now, forget rhyming. Forget structure, forget that syllables even exist. Try to express the feeling in your chest. A first line tumbles out. Words fail you. It sounds like a conversation, like you&rsquo;re about to unload a week&rsquo;s worth of life events to a friend. It sounds almost ridiculous, like anything but the elegance, the neatness, the perfection that is a poem. And by the time you reach line 3, you&rsquo;ve lost any idea of what to write about. The feeling still burns in your chest, but words? They don&rsquo;t come. There&rsquo;s nothing to express it. No metaphors come to mind. And soon that sweet rush of inspiration you had when you picked up your pen fades into something between a headache and the flush of frustration.</p>]]></summary>
+    </entry>
+</feed>

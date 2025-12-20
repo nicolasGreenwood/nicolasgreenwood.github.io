@@ -1,0 +1,26 @@
+
+
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Essays - Nicolas Greenwood",
+  "home_page_url": "https://nicolasgreenwood.github.io/?utm_source=json_feed",
+  
+  "description": "I'm an 18 year old aspiring multidisciplinary artist based in Novi Sad, Serbia. My work includes, but is not exclusive to, poetry, prose, design, programming and visual art.",
+  "icon": "https://nicolasgreenwood.github.io/img/open-graph-logo_hu_1978870e36bf97f6.png",
+  "favicon": "https://nicolasgreenwood.github.io/img/open-graph-logo_hu_1978870e36bf97f6.png",
+  "authors": [
+    {
+      "name": "Nicolas Greenwood"
+    }
+  ],
+  "language" : "en",
+  "items": [
+    {
+      "id": "323825c5-ddb3-597c-b9f8-1bd4cd7226ac",
+      "url": "https://nicolasgreenwood.github.io/essays/how-to-write-poetry/?utm_source=json_feed",
+      "title": "How to Write Poetry",
+      "summary": "Writing poetry isn\u0026rsquo;t easy. But, contrary to popular belief, the difficulty isn\u0026rsquo;t so much in the structure, in the rhyming — it\u0026rsquo;s what to write about. Just think of it: come up with a poem topic. All kinds of ideas pop into your head, from nature to love to grief. Now, forget rhyming. Forget structure, forget that syllables even exist. Try to express the feeling in your chest. A first line tumbles out. Words fail you. It sounds like a conversation, like you\u0026rsquo;re about to unload a week\u0026rsquo;s worth of life events to a friend. It sounds almost ridiculous, like anything but the elegance, the neatness, the perfection that is a poem. And by the time you reach line 3, you\u0026rsquo;ve lost any idea of what to write about. The feeling still burns in your chest, but words? They don\u0026rsquo;t come. There\u0026rsquo;s nothing to express it. No metaphors come to mind. And soon that sweet rush of inspiration you had when you picked up your pen fades into something between a headache and the flush of frustration.",
+      "date_published": "2025-04-26T00:00:00Z"
+    }
+  ]
+}
