@@ -23,7 +23,7 @@ and all I can write of is darkness.”*
 - beholding the nonexisting and the
 - awful delight we take in the glittering stone
 - of the cave wall, shaped like a massive, laughing skull
-- and with the torches we grip in perspirating hands
+- and with the torches we grip in perspiring hands
 - above the coffin, polished wood reflecting orange
 - and the cold, dry, lifeless air
 - we fill our lungs so cautiously with
