@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html
+    lang="{{ site.Language.LanguageCode }}"
+    dir="{{ or site.Language.LanguageDirection `ltr` }}"
+    prefix="og: https://ogp.me/ns#"
+    itemscope
+    itemtype="https://schema.org/WebPage"
+    id="top-of-site"
+>
+    {{ partial "head.html" . }}
+    <body class="theme-base-{{ site.Params.colorScheme }}">
+        <div id="top-of-site-anchor"></div>
+        {{ if .Params.toc }} {{ partial "sidebar-toc.html" . }} {{ else }} {{
+        partial "sidebar.html" . }} {{ end }}
+        <div class="wrap">
+            <header class="masthead">
+                <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+                <div class="container header-center">
+                <svg
+                    class="logo"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="70"
+                    viewBox="0 0 60 70"
+                    fill="none"
+                >
+                    <g clip-path="url(#clip0_124_42)">
+                        <path
+                            d="M8.38434 53C6.60719 53 5.03453 54.1505 4.49652 55.8443L1.68804 64.6858C0.852469 67.3163 2.81584 70 5.57587 70H21.4241C24.1842 70 26.1475 67.3163 25.312 64.6858L22.5035 55.8443C21.9655 54.1505 20.3928 53 18.6157 53H8.38434Z"
+                            fill="#FF2E63"
+                        />
+                        <line
+                            x1="1.5"
+                            y1="-1.5"
+                            x2="9.62285"
+                            y2="-1.5"
+                            transform="matrix(-0.323224 0.946322 0.965492 0.260432 10.1411 56.1533)"
+                            stroke="#08D9D6"
+                            stroke-width="3"
+                            stroke-linecap="round"
+                        />
+                        <path
+                            d="M57.48 0C57.4804 27.2851 11.2081 26.2342 15.2596 52.1C8.65278 43.1779 11.3875 30.9385 20.9997 24.4184L57.48 0Z"
+                            fill="#08D9D6"
+                        />
+                        <path
+                            d="M57.6562 0.212594C64.9587 9.29019 54.6415 27.3638 34.4304 40.7687L15.9883 53C15.7359 52.7024 15.4943 52.4005 15.2629 52.0951C11.112 26.182 57.481 27.335 57.4806 0L57.6562 0.212594Z"
+                            fill="#FF2E63"
+                        />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_124_42">
+                            <rect width="60" height="70" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <h3 class="masthead-title">
+                    <a
+                        href="{{ site.Home.RelPermalink }}"
+                        title='{{ i18n "home" }}'
+                        >{{ site.Title }}</a
+                    >
+                    <br /><small>{{ site.Params.tagline }}</small>
+                </h3>
+            </div>
+                <a
+                    class="search-link"
+                    href="/search"
+                    aria-label="Search my work"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#f9fafb"
+                        width="24"
+                        height="24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                        />
+                    </svg>
+                </a>
+            </header>
+
+            <main class="container content" id="main">
+                {{ block "main" . }}{{ end }}
+            </main>
+            {{ partial "custom-footer.html" . }}
+        </div>
+
+        {{ partial "subscribe-popup.html" . }}
+
+        <a href="#top-of-site" class="top-of-site-link" data-visible="false">
+            <span
+                class="screen-reader-text"
+                aria-label='{{ i18n "back_to_top_label" }}'
+            >
+                {{ i18n "back_to_top" }}
+            </span>
+            <svg width="32" height="32" viewBox="0 0 100 100">
+                <path
+                    fill="white"
+                    d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"
+                ></path>
+            </svg>
+        </a>
+        <script>
+            // sub form logic
+            const subForm = document.querySelector(".sub-popup");
+            const closeBtn = document.querySelector(".close-btn");
+
+            window.setTimeout(() => {
+                if (localStorage.getItem("popupState") != "shown") {
+                    subForm.style.display = "block";
+                    localStorage.setItem("popupState", "shown");
+                }
+            }, 5000);
+
+            closeBtn.addEventListener("click", () => {
+                subForm.style.display = "none";
+            });
+        </script>
+        {{ if .Params.uses_splide }}
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const splide = new Splide("#main-carousel", {
+                    pagination: false,
+                });
+
+                const thumbnails = document.getElementsByClassName("thumbnail");
+                let current;
+
+                for (var i = 0; i < thumbnails.length; i++) {
+                    initThumbnail(thumbnails[i], i);
+                }
+
+                function initThumbnail(thumbnail, index) {
+                    thumbnail.addEventListener("click", function () {
+                        splide.go(index);
+                    });
+                }
+
+                splide.on("mounted move", function () {
+                    let thumbnail = thumbnails[splide.index];
+
+                    if (thumbnail) {
+                        if (current) {
+                            current.classList.remove("is-active");
+                        }
+
+                        thumbnail.classList.add("is-active");
+                        current = thumbnail;
+                    }
+                });
+
+                splide.mount();
+            });
+        </script>
+        {{ end }}
+    </body>
+</html>

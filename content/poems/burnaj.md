@@ -1,0 +1,126 @@
+---
+title: Burnaj
+date: 2024-08-26
+draft: false
+author: Nicolas Greenwood
+---
+
+{.poetry}
+- A clenched fist descended
+- On the point on the map
+- The village was besieged
+- Explosions shrieked
+- The wind screamed
+- Jaws clenched
+- Triggers squeezed
+- Smoke drifted
+- Foreign boots pounded
+- The dust of a man’s homeland.
+- ‘Twas the whisper of a traitor
+- He heard in the notes
+- Of an ominous wind
+- A five-pointed star
+- The color of blood
+- Was on their shoulders
+- They were in the village
+- They shouted, they fired
+- It swam before his eyes
+- He watched them through a slit
+- In a cracked wall
+- His faithful friend at his side
+- They were coming for them.
+- “Surrender,” was beneath their breath
+- They dared not say that word
+- Yet it was written
+- All over the walls
+- It was heard
+- In shots’ echoes
+- And soldiers’ shouts.
+- In that very moment
+- A vision flashed before his eyes
+- The rivers of Takhar
+- The mountains, the stones
+- His father’s piercing eyes
+- The Chah Ab he knew
+- His land in freedom
+- His brothers’ blood
+- The dust beneath his shoes
+- All of it screamed for justice
+- The wind was calling his name
+- From the mountains.
+- The pair - they fled
+- The man and his trusty friend
+- Over low walls and flat roofs
+- A secret route known only to them.
+- As silent as the hawks
+- They slipped through the brush
+- Their brothers’ cries
+- Echoing in their ears
+- Each a pang of grief
+- In their thumping chests
+- And yet they ran on
+- They ran on and on.
+- Was this not for Chah Ab?
+- Was this not for honor?
+- Was this not for Allah?
+- The small alleys flashed by them
+- In moving blur
+- The explosions echoed farther
+- And farther away.
+- A scent of hope
+- Was in the air
+- Their feet flew over the dust
+- Their shadows danced in concealment
+- The wind carried them forward
+- With swiftness.
+- The other side they reached
+- Their hearts pounding
+- Their lungs gasping
+- Their eyes squinting
+- Their minds racing.
+- A pounding of hooves was heard
+- A gallop, a thunder
+- A cloud of sunlit dust
+- A horse’s neigh, a glimpse
+- It broke into view
+- It crossed their path
+- It appeared in front of them.
+- “Burnaj!” exclaimed the man
+- In whispered delight, in honest shock
+- His beloved steed
+- His Bucephalus
+- His father’s gift.
+- Two brothers had been swept
+- Off the animal’s back
+- Their martyr’s blood hurled
+- Across their nation’s ground
+- And now
+- In miraculous synchronicity
+- From the farm he had galloped
+- To his master’s hidden path
+- To save him from destruction
+- To save Chah Ab
+- Alone, by himself
+- A horse’s heart, who can know?
+- He had seen martyr’s blood
+- He was a steed of Takhar
+- A horse of the Jihad
+- Of Afghan blood and mane.
+- Allah infused his limbs with strength
+- His power flooded his body
+- Now his master he carried
+- At time right, at moment crucial
+- Through the stony path
+- Up the slopes to the hills
+- Where a new battle was born
+- A dream was dreamt once again
+- Of that Chah Ab
+- In the heart of every man
+- Free; their own.
+- The cause for which his brothers had died
+- Was taken up again
+- Beat loudly in their hearts
+- As they tore through the wind
+- On the back of a horse
+- A horse named Burnaj.
+{.poetry}

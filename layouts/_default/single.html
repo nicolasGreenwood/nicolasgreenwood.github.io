@@ -1,0 +1,47 @@
+{{ define "main" }}
+{{- $postType := .Type | lower | singularize -}}
+<article class="{{ partial "post-class.html" . }}" role="document"{{ with .Params.lang }} lang="{{ . }}"{{ end }}>
+    <header>
+        <h1 class="text-title">
+            {{ .Params.pageTitle | default .Title }}
+        </h1>
+        <p class="post-meta" style="margin-bottom: 1rem;">
+            {{ if .Params.show_date }}
+                {{ partial "post-meta/date.html" . }}
+            {{ end }}
+        </p>
+    </header>
+
+    <div class="{{ $postType }}-body">
+        {{ .Content }}
+    </div>
+
+    {{/* Post tags are not allowed for drama, narratives and poems */}}
+    {{ if not (in (slice "drama" "narrative" "poem") $postType) }}
+        {{ partial "post-tags.html" . }}
+    {{ end }}
+
+    {{ if .Params.is_post }}
+    <footer class="article-footer">
+        {{ $pages := where .Site.RegularPages.ByDate.Reverse "Params.is_post" "eq" true }}
+
+        <div class="af-item">
+        {{ with $pages.Prev . }}
+        <span class="post-meta">Previous</span>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        {{ end }}
+        </div>
+
+        <div class="af-item">
+        {{ with $pages.Next . }}
+        <span class="post-meta">Next</span>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        {{ end }}
+        </div>
+
+    </footer>
+    {{ end }}
+
+    {{ partial "comments.html" . }}
+</article>
+{{ end }}

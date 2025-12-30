@@ -1,0 +1,178 @@
+---
+title: The Arab and the Drum
+date: 2024-09-07
+draft: false
+author: Nicolas Greenwood
+---
+
+{.poetry}
+- Gold was the color of the sky
+- Washed out with a tint of pale blue
+- Gold was the color of the sand
+- Whipped into spirals the wind blew
+- Gold was the color of the ring
+- On his finger beating the drum
+- It flashed brightly with every beat
+- In the fierce Arabian sun.
+- Alone he was in the whole world
+- Save for the camel at his side
+- With reign in hand and head bowed down
+- He kicked the sand with every stride.
+- His eyes dark beneath his lashes
+- Beneath the cloth glistened his brow
+- His breath came in short tired gasps
+- All his life was forgotten now.
+- It was only the burning rays
+- The ripples in the sea of sand
+- They quivered, they rolled like the waves
+- He was sailing away from land.
+- The dunes hummed the song of the earth
+- His heartbeat sounded in his ears
+- His tongue was dry and his throat choked
+- The sand flashed like a thousand mirrors.
+- He could not breathe, he could not see
+- He was not alive, he was dead
+- He was a carcass with a drum
+- A corpse with a tune in his head.
+{.poetry}
+- *A flick of his wrist and his thumb*
+- *A hollow thump in step, in beat*
+- *A light touch of his thumb came next*
+- *A pause, then eternal repeat.*
+{.poetry}
+- 'Twas balm to the soul of man
+- To feel the rhythm pulse through him
+- To lose himself in the pattern
+- The tempo of hope and ruin
+- He could hear it in the wind's roar
+- Feel it in the sand in his hand
+- The whole world's moaning in sadness
+- The whole world's tears beneath the sand.
+- Orange glowed beneath his eyelids
+- As linen brushed his weathered cheek
+- Warmth and color fused into dreams
+- Amid the arid gusty shriek.
+- The shriek - it morphed into a scream
+- He saw a girl against the sky
+- Her hair was torn, her face was wet
+- Across the world echoed her cry.
+- The wind - it blew into a hum
+- Of the radio's hiss and wail
+- In the dusty taxis of Cairo
+- Every song an unfinished tale.
+- The car's windows were shaking frames
+- Of scenes through a filter of dust
+- He remembered the shadows' shapes 
+- On the sun the color of rust.
+- It was so hot he smelled the heat
+- The scent of spark, and steel, and stone
+- He was spinning in red darkness
+- With himself and his dreams alone.
+{.poetry}
+- *A flick of his wrist and his thumb*
+- *A hollow thump in step, in beat*
+- *A light touch of his thumb came next*
+- *A pause, then eternal repeat.*
+{.poetry}
+- Now he was in Giza's alleys
+- Wires crossed the dark sky above
+- The windows were glowing orange
+- His turban as white as a dove.
+- There was rubble all around him
+- There was a fire in his eyes
+- The dream of flight in his bosom
+- There were stars like sparks in the skies
+- That was euphoria, he knew
+- But back then he had forgotten
+- To remember his tearful days
+- From whose womb he was begotten.
+- He had not seen his mother's eyes
+- He had forgotten all of them
+- Now her voice was making him shake
+- Now there was pain inside of him.
+- He was blinded by flashing light
+- Yes, yes - it was a reflection
+- It was from her golden earrings
+- The sun on her smooth complexion
+- Was not that in another world?
+- Not in the world of his closed eyes
+- In his heavy chest, his short gasps
+- Like from hell seeing paradise.
+- He felt the wind in his fingers
+- A tremor shivered through his spine
+- His heartbeat matched the drum's rhythm
+- His lashes the horizon's line.
+{.poetry}
+- *A flick of his wrist and his thumb*
+- *A hollow thump in step, in beat*
+- *A light touch of his thumb came next*
+- *A pause, then eternal repeat.*
+{.poetry}
+- A pattern above the pattern
+- A hidden beat within the beat
+- A song of grief, of wind, of sand
+- Flaming passions drowning in heat.
+- Could a rhythm relive a life?
+- Could a dream add to his years?
+- Could a drum change the heart of man?
+- Could the sun and wind dry his tears?
+- Now he saw a linen pattern
+- It was draped over her bent head
+- Cast carelessly over her shoulder
+- There were stains of blood on the bed
+- He remembered that bright pattern
+- With white lilies from the Nile
+- Against a background of sky blue
+- He thought about that a while.
+- The only beautiful symbol
+- In a room of darkness and pain
+- A patch of sweet color, of hope
+- A patch of sky through clouds of rain.
+- That feeling that burned his bosom
+- No, no - it set him on fire
+- It flooded him and made him fly
+- Higher and higher and higher.
+- He remembered that it was love
+- Ecstasy boiling in him
+- Then laughter spilling out of him
+- His head shaking in the rhythm.
+{.poetry}
+- *A flick of his wrist and his thumb*
+- *A hollow thump in step, in beat*
+- *A light touch of his thumb came next*
+- *A pause, then eternal repeat.*
+{.poetry}
+- The sun and moon exchanged places
+- A piercing cold wind swept the sands
+- Around a pit of dancing flames
+- The Bedouin clan warmed their hands.
+- The ever-present drum echoed
+- It resounded through the cold air
+- Alone in majestic silence
+- Beneath the whitish moonlit glare.
+- Allah! Hear the sons of men's sounds
+- Hear their senseless beat, mad delight
+- In so puny a thing - the drum
+- Lo, they lose themselves all the night.
+- Lose themselves in a strange pattern
+- One only they can feel and hear
+- It's a mirage in the rhythm
+- It's an illusion in the ear.
+- Oh Allah, see our senseless joy
+- Have mercy on the souls of men
+- For we are blown like grains of sand
+- From sorrow to joy like children.
+- Our passions are like gusts of wind
+- One moment a hum, then a scream
+- Foaming at the lips with madness
+- Of delight at a passing dream
+- To dripping at the eyes with tears
+- At grief we do not understand
+- Oh Allah, have mercy on us!
+- We have fallen - extend your hand!
+{.poetry}
+- *A flick of his wrist and his thumb*
+- *A hollow thump in step, in beat*
+- *A light touch of his thumb came next*
+- *A pause, then eternal repeat.*
+{.poetry}
