@@ -1,0 +1,3 @@
+# robots.txt file for "Nicolas Greenwood" website, nicolasgreenwood.github.io
+User-agent: *
+Disallow: /
