@@ -2,7 +2,7 @@
 baseURL = 'https://nicolasgreenwood.github.io'
 
 # A "copyright"-line to be added to RSS/Atom files and the footer.
-copyright = '© 2025 Nicolas Greenwood. All rights reserved.'
+copyright = '© 2026 Nicolas Greenwood. All rights reserved.'
 
 # Keep title short to prevent overflow.
 # There’s no official guidance on this, but 40 characters for
