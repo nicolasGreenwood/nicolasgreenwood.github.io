@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en" xml:base="https://nicolasgreenwood.github.io/">
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en" xml:base="http://localhost:1313/">
     <title>Articles - Nicolas Greenwood</title>
     <subtitle type="html"><![CDATA[I'm an 18 year old aspiring multidisciplinary artist based in Novi Sad, Serbia. My work includes, but is not exclusive to, poetry, prose, design, programming and visual art.]]></subtitle>
     <link href="/articles/" rel="alternate" type="text/html" title="html" />
     <link href="/articles/rss.xml" rel="alternate" type="application/rss+xml" title="rss" />
     <link href="/articles/atom.xml" rel="self" type="text/xml" title="atom" />
     <link href="/articles/feed.json" rel="alternate" type="application/feed+json" title="jsonfeed" />
-    <icon>https://nicolasgreenwood.github.io/img/open-graph-logo_hu_1978870e36bf97f6.png</icon>
-    <logo>https://nicolasgreenwood.github.io/img/open-graph-logo_hu_1978870e36bf97f6.png</logo>
+    <icon>http://localhost:1313/img/open-graph-logo_hu_cfda06ea0adc9739.png</icon>
+    <logo>http://localhost:1313/img/open-graph-logo_hu_cfda06ea0adc9739.png</logo>
     <author>
         <name>Nicolas Greenwood</name>
         <email>nicolas.greenwood@outlook.com</email>
     </author>
-    <generator uri="https://gohugo.io" version="0.152.2">Hugo</generator>
-    <updated>2025-12-27T00:00:00Z</updated>
-    <id>urn:uuid:ac78d7d9-f589-5c8b-d97e-1c88a46e755b</id>
+    <generator uri="https://gohugo.io" version="0.159.1">Hugo</generator>
+    <updated>2026-04-21T00:00:00Z</updated>
+    <id>urn:uuid:6d116a4d-807d-53e3-09c2-1fde53eae16b</id>
     <entry>
         
         <category term="articles" />
         
-        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/articles/disovizija-2025-my-first-public-poetry-recital/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="http://localhost:1313/articles/disovizija-2025-my-first-public-poetry-recital/?utm_source=atom_feed" />
         <title type="html"><![CDATA[Disovizija 2025: My First Public Poetry Recital]]></title>
         
         
         
         <published>2025-05-01T00:00:00Z</published>
         <updated>2025-05-01T00:00:00Z</updated>
-        <id>urn:uuid:585127c5-98ec-5b6e-f9c0-32f21872ced8</id>
+        <id>urn:uuid:e6994ae4-5a43-57e4-79f3-e3429b81f418</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
