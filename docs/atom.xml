@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en" xml:base="http://localhost:1313/">
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en" xml:base="https://nicolasgreenwood.github.io/">
     <title>Nicolas Greenwood</title>
     <subtitle type="html"><![CDATA[I'm an 18 year old aspiring multidisciplinary artist based in Novi Sad, Serbia. My work includes, but is not exclusive to, poetry, prose, design, programming and visual art.]]></subtitle>
     <link href="/" rel="alternate" type="text/html" title="html" />
@@ -9,27 +9,27 @@
     <link href="/feed.json" rel="alternate" type="application/feed+json" title="jsonfeed" />
     <link href="/index.json" rel="alternate" type="application/json" title="json" />
     <link href="/humans.txt" rel="alternate" type="text/plain" title="humanstxt" />
-    <icon>http://localhost:1313/img/open-graph-logo_hu_cfda06ea0adc9739.png</icon>
-    <logo>http://localhost:1313/img/open-graph-logo_hu_cfda06ea0adc9739.png</logo>
+    <icon>https://nicolasgreenwood.github.io/img/open-graph-logo_hu_cfda06ea0adc9739.png</icon>
+    <logo>https://nicolasgreenwood.github.io/img/open-graph-logo_hu_cfda06ea0adc9739.png</logo>
     <author>
         <name>Nicolas Greenwood</name>
         <email>nicolas.greenwood@outlook.com</email>
     </author>
     <generator uri="https://gohugo.io" version="0.159.1">Hugo</generator>
     <updated>2026-04-21T00:00:00Z</updated>
-    <id>urn:uuid:6d116a4d-807d-53e3-09c2-1fde53eae16b</id>
+    <id>urn:uuid:ac78d7d9-f589-5c8b-d97e-1c88a46e755b</id>
     <entry>
         
         <category term="poems" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/poems/into-the-tomb-we-go/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/poems/into-the-tomb-we-go/?utm_source=atom_feed" />
         <title type="html"><![CDATA[Into the Tomb We Go]]></title>
         
         
         
         <published>2025-12-27T00:00:00Z</published>
         <updated>2025-12-27T00:00:00Z</updated>
-        <id>urn:uuid:04a64067-6896-50ce-b9ee-96336c32b2a6</id>
+        <id>urn:uuid:bb95d2a5-c5a9-5620-e95c-ac84c6c3beea</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
@@ -127,14 +127,14 @@ and all I can write of is darkness.”</em></p>
         
         <category term="poems" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/poems/truly-it-comes-as-no-surprise/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/poems/truly-it-comes-as-no-surprise/?utm_source=atom_feed" />
         <title type="html"><![CDATA[Truly, It Comes as No Surprise]]></title>
         
         
         
         <published>2025-09-15T00:00:00Z</published>
         <updated>2025-09-15T00:00:00Z</updated>
-        <id>urn:uuid:b7884435-d6f2-53ed-8962-22f01442d6b0</id>
+        <id>urn:uuid:9da89c93-173d-59af-e9c9-d36163c281bf</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
@@ -154,14 +154,14 @@ and all I can write of is darkness.”</em></p>
         
         <category term="poems" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/poems/to-the-depths-of-the-ionian-sea/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/poems/to-the-depths-of-the-ionian-sea/?utm_source=atom_feed" />
         <title type="html"><![CDATA[To the Depths of the Ionian Sea]]></title>
         
         
         
         <published>2025-06-19T00:00:00Z</published>
         <updated>2025-06-19T00:00:00Z</updated>
-        <id>urn:uuid:56244512-c263-5fe3-e92c-372c50d6ce5c</id>
+        <id>urn:uuid:51c487bc-4d4f-5e34-d9a3-68b691452b5a</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
@@ -219,14 +219,14 @@ and all I can write of is darkness.”</em></p>
         
         <category term="poems" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/poems/dreaming-of-you/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/poems/dreaming-of-you/?utm_source=atom_feed" />
         <title type="html"><![CDATA[Dreaming of You]]></title>
         
         
         
         <published>2025-06-18T00:00:00Z</published>
         <updated>2025-06-18T00:00:00Z</updated>
-        <id>urn:uuid:97544cf3-a7da-5142-f97e-2d45cdd4e7fb</id>
+        <id>urn:uuid:388fe3aa-b3ca-5413-d932-fe6ed2520c33</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
@@ -277,14 +277,14 @@ and all I can write of is darkness.”</em></p>
         
         <category term="poems" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/poems/i-wrote-this-beneath-stars/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/poems/i-wrote-this-beneath-stars/?utm_source=atom_feed" />
         <title type="html"><![CDATA[I Wrote This Beneath Stars]]></title>
         
         
         
         <published>2025-06-17T00:00:00Z</published>
         <updated>2025-06-17T00:00:00Z</updated>
-        <id>urn:uuid:4b8f0f01-1368-5c3c-c9ec-426d257d5a76</id>
+        <id>urn:uuid:4705da60-5cf0-5572-09de-f6def9878d8f</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
@@ -315,14 +315,14 @@ and all I can write of is darkness.”</em></p>
         
         <category term="poems" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/poems/horizon/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/poems/horizon/?utm_source=atom_feed" />
         <title type="html"><![CDATA[Horizon]]></title>
         
         
         
         <published>2025-06-16T00:00:00Z</published>
         <updated>2025-06-16T00:00:00Z</updated>
-        <id>urn:uuid:a6001e44-4467-576d-d91c-4abb0f8960f6</id>
+        <id>urn:uuid:8dde4461-864c-527f-e913-bfbd3b113851</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
@@ -357,14 +357,14 @@ and all I can write of is darkness.”</em></p>
         
         <category term="poems" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/poems/faces/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/poems/faces/?utm_source=atom_feed" />
         <title type="html"><![CDATA[Faces]]></title>
         
         
         
         <published>2025-06-10T00:00:00Z</published>
         <updated>2025-06-10T00:00:00Z</updated>
-        <id>urn:uuid:4430f9e6-7fa8-5865-1965-19957a59b7a0</id>
+        <id>urn:uuid:0c72dc34-6421-5537-6940-722cd22bde64</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
@@ -393,14 +393,14 @@ and all I can write of is darkness.”</em></p>
         
         <category term="poems" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/poems/vreme/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/poems/vreme/?utm_source=atom_feed" />
         <title type="html"><![CDATA[Време (Time)]]></title>
         
         
         
         <published>2025-05-20T00:00:00Z</published>
         <updated>2025-05-20T00:00:00Z</updated>
-        <id>urn:uuid:a2584ec3-0fa1-58f1-e9f7-d95b90c09927</id>
+        <id>urn:uuid:933c03e3-dbb8-534a-497d-67d3f26d212e</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
@@ -499,14 +499,14 @@ and all I can write of is darkness.”</em></p>
         
         <category term="articles" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/articles/disovizija-2025-my-first-public-poetry-recital/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/articles/disovizija-2025-my-first-public-poetry-recital/?utm_source=atom_feed" />
         <title type="html"><![CDATA[Disovizija 2025: My First Public Poetry Recital]]></title>
         
         
         
         <published>2025-05-01T00:00:00Z</published>
         <updated>2025-05-01T00:00:00Z</updated>
-        <id>urn:uuid:e6994ae4-5a43-57e4-79f3-e3429b81f418</id>
+        <id>urn:uuid:585127c5-98ec-5b6e-f9c0-32f21872ced8</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
@@ -525,14 +525,14 @@ and all I can write of is darkness.”</em></p>
         
         <category term="essays" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/essays/how-to-write-poetry/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/essays/how-to-write-poetry/?utm_source=atom_feed" />
         <title type="html"><![CDATA[How to Write Poetry]]></title>
         
         
         
         <published>2025-04-26T00:00:00Z</published>
         <updated>2025-04-26T00:00:00Z</updated>
-        <id>urn:uuid:3ec2febc-a062-5c63-c9b7-aa059e577f7a</id>
+        <id>urn:uuid:323825c5-ddb3-597c-b9f8-1bd4cd7226ac</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
@@ -544,14 +544,14 @@ and all I can write of is darkness.”</em></p>
         
         <category term="poems" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/poems/the-chapter-of-love/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/poems/the-chapter-of-love/?utm_source=atom_feed" />
         <title type="html"><![CDATA[The Chapter of Love]]></title>
         
         
         
         <published>2025-04-05T00:00:00Z</published>
         <updated>2025-04-05T00:00:00Z</updated>
-        <id>urn:uuid:e98a99f7-197b-505e-19ef-369cfbb44149</id>
+        <id>urn:uuid:b8e0d030-e792-578c-b918-671c8428e875</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
@@ -655,14 +655,14 @@ and all I can write of is darkness.”</em></p>
         
         <category term="poems" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/poems/streetlight/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/poems/streetlight/?utm_source=atom_feed" />
         <title type="html"><![CDATA[Streetlight]]></title>
         
         
         
         <published>2025-04-04T00:00:00Z</published>
         <updated>2025-04-04T00:00:00Z</updated>
-        <id>urn:uuid:41c8b989-1cda-574b-c907-78d7f4059b50</id>
+        <id>urn:uuid:0a926f8d-fbed-51c4-19f5-2ca45da19069</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
@@ -715,14 +715,14 @@ and all I can write of is darkness.”</em></p>
         
         <category term="poems" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/poems/prolece/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/poems/prolece/?utm_source=atom_feed" />
         <title type="html"><![CDATA[Proleće (Spring)]]></title>
         
         
         
         <published>2025-03-18T00:00:00Z</published>
         <updated>2025-03-18T00:00:00Z</updated>
-        <id>urn:uuid:7203df2d-9d64-5b94-49f9-c76bfc11ebb6</id>
+        <id>urn:uuid:7dc5070c-5e8a-5b20-f9de-357ab6e7dcf9</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
@@ -762,14 +762,14 @@ and all I can write of is darkness.”</em></p>
         
         <category term="poems" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/poems/you-remind-me/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/poems/you-remind-me/?utm_source=atom_feed" />
         <title type="html"><![CDATA[You Remind Me]]></title>
         
         
         
         <published>2025-03-03T00:00:00Z</published>
         <updated>2025-03-03T00:00:00Z</updated>
-        <id>urn:uuid:1e1f452a-cd14-5e63-f982-c4485fd0c0ba</id>
+        <id>urn:uuid:a274db29-5b4d-5597-e9c7-e3a07da77cfb</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
@@ -798,14 +798,14 @@ and all I can write of is darkness.”</em></p>
         
         <category term="poems" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/poems/to-you/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/poems/to-you/?utm_source=atom_feed" />
         <title type="html"><![CDATA[To You]]></title>
         
         
         
         <published>2025-03-03T00:00:00Z</published>
         <updated>2025-03-03T00:00:00Z</updated>
-        <id>urn:uuid:c4a0cd7a-caca-59cb-a95a-7179e812ade2</id>
+        <id>urn:uuid:60ded721-d588-518a-c9ff-90e9c0494f93</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
@@ -846,14 +846,14 @@ and all I can write of is darkness.”</em></p>
         
         <category term="poems" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/poems/absence/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/poems/absence/?utm_source=atom_feed" />
         <title type="html"><![CDATA[Absence]]></title>
         
         
         
         <published>2025-03-03T00:00:00Z</published>
         <updated>2025-03-03T00:00:00Z</updated>
-        <id>urn:uuid:e0952da3-c7c9-51be-0904-8586228bb771</id>
+        <id>urn:uuid:e9e2fefe-44de-5a7f-e94e-169be5db89c1</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
@@ -906,14 +906,14 @@ and all I can write of is darkness.”</em></p>
         
         <category term="poems" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/poems/dear-pacific/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/poems/dear-pacific/?utm_source=atom_feed" />
         <title type="html"><![CDATA[Dear Pacific,]]></title>
         
         
         
         <published>2025-02-05T00:00:00Z</published>
         <updated>2025-02-05T00:00:00Z</updated>
-        <id>urn:uuid:2e80528f-99fd-532c-395a-bd408e5f2a78</id>
+        <id>urn:uuid:9f0463de-c950-5d5f-993f-238cd99107ab</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
@@ -994,14 +994,14 @@ and all I can write of is darkness.”</em></p>
         
         <category term="poems" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/poems/to-the-butterfly/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/poems/to-the-butterfly/?utm_source=atom_feed" />
         <title type="html"><![CDATA[To the Butterfly]]></title>
         
         
         
         <published>2024-10-20T00:00:00Z</published>
         <updated>2024-10-20T00:00:00Z</updated>
-        <id>urn:uuid:bc026bf4-fabf-5a96-2901-214bf55fd514</id>
+        <id>urn:uuid:52ca96ef-f227-5d99-89cd-109887d32ade</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
@@ -1060,14 +1060,14 @@ and all I can write of is darkness.”</em></p>
         
         <category term="poems" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/poems/the-arab-and-the-drum/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/poems/the-arab-and-the-drum/?utm_source=atom_feed" />
         <title type="html"><![CDATA[The Arab and the Drum]]></title>
         
         
         
         <published>2024-09-07T00:00:00Z</published>
         <updated>2024-09-07T00:00:00Z</updated>
-        <id>urn:uuid:2d8d20d3-2eda-5cc5-e9e9-7cc7b48f10d9</id>
+        <id>urn:uuid:f18b8ab7-956e-515e-c96b-80e170331adb</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
@@ -1258,14 +1258,14 @@ and all I can write of is darkness.”</em></p>
         
         <category term="poems" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/poems/burnaj/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/poems/burnaj/?utm_source=atom_feed" />
         <title type="html"><![CDATA[Burnaj]]></title>
         
         
         
         <published>2024-08-26T00:00:00Z</published>
         <updated>2024-08-26T00:00:00Z</updated>
-        <id>urn:uuid:2191223e-d114-588e-d968-2f4195690dc9</id>
+        <id>urn:uuid:2d7da56a-4181-5578-b9a2-0f5c463850b9</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
@@ -1395,14 +1395,14 @@ and all I can write of is darkness.”</em></p>
         
         <category term="poems" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/poems/refugees-song/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/poems/refugees-song/?utm_source=atom_feed" />
         <title type="html"><![CDATA[Refugee's Song]]></title>
         
         
         
         <published>2024-04-21T00:00:00Z</published>
         <updated>2024-04-21T00:00:00Z</updated>
-        <id>urn:uuid:b2bfaae8-c57f-59d7-f9bc-2c3a321a78e0</id>
+        <id>urn:uuid:ef30edfe-b9aa-5fe8-2985-b5074cc32585</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
@@ -1444,14 +1444,14 @@ and all I can write of is darkness.”</em></p>
         
         <category term="poems" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/poems/a-conversation-with-myself/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/poems/a-conversation-with-myself/?utm_source=atom_feed" />
         <title type="html"><![CDATA[A Conversation With Myself]]></title>
         
         
         
         <published>2024-04-13T00:00:00Z</published>
         <updated>2024-04-13T00:00:00Z</updated>
-        <id>urn:uuid:9796948e-9add-539b-89f6-0e3430959fac</id>
+        <id>urn:uuid:d0d34e10-e9bb-5606-69ad-77f3386988a8</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
@@ -1522,14 +1522,14 @@ and all I can write of is darkness.”</em></p>
         
         <category term="poems" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/poems/egypt/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/poems/egypt/?utm_source=atom_feed" />
         <title type="html"><![CDATA[Egypt]]></title>
         
         
         
         <published>2024-04-06T00:00:00Z</published>
         <updated>2024-04-06T00:00:00Z</updated>
-        <id>urn:uuid:104f26a0-ddd4-5e9c-a989-bf7a3112b452</id>
+        <id>urn:uuid:c0eba711-a48e-5efa-69d1-b42291ca2933</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>

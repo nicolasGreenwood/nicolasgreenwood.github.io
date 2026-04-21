@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en" xml:base="http://localhost:1313/">
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en" xml:base="https://nicolasgreenwood.github.io/">
     <title>Miscellanea - Nicolas Greenwood</title>
     <subtitle type="html"><![CDATA[I'm an 18 year old aspiring multidisciplinary artist based in Novi Sad, Serbia. My work includes, but is not exclusive to, poetry, prose, design, programming and visual art.]]></subtitle>
     <link href="/miscellanea/" rel="alternate" type="text/html" title="html" />
     <link href="/miscellanea/rss.xml" rel="alternate" type="application/rss+xml" title="rss" />
     <link href="/miscellanea/atom.xml" rel="self" type="text/xml" title="atom" />
     <link href="/miscellanea/feed.json" rel="alternate" type="application/feed+json" title="jsonfeed" />
-    <icon>http://localhost:1313/img/open-graph-logo_hu_cfda06ea0adc9739.png</icon>
-    <logo>http://localhost:1313/img/open-graph-logo_hu_cfda06ea0adc9739.png</logo>
+    <icon>https://nicolasgreenwood.github.io/img/open-graph-logo_hu_cfda06ea0adc9739.png</icon>
+    <logo>https://nicolasgreenwood.github.io/img/open-graph-logo_hu_cfda06ea0adc9739.png</logo>
     <author>
         <name>Nicolas Greenwood</name>
         <email>nicolas.greenwood@outlook.com</email>
     </author>
     <generator uri="https://gohugo.io" version="0.159.1">Hugo</generator>
     <updated>2026-04-21T00:00:00Z</updated>
-    <id>urn:uuid:6d116a4d-807d-53e3-09c2-1fde53eae16b</id>
+    <id>urn:uuid:ac78d7d9-f589-5c8b-d97e-1c88a46e755b</id>
     <entry>
         
         <category term="miscellanea" />
         
-        <link rel="alternate" type="type/html" href="http://localhost:1313/miscellanea/narrative/?utm_source=atom_feed" />
+        <link rel="alternate" type="type/html" href="https://nicolasgreenwood.github.io/miscellanea/narrative/?utm_source=atom_feed" />
         <title type="html"><![CDATA[Sveti Sava: Svetlost u Tami (Saint Sava: a Light in Darkness)]]></title>
         
         
         
         <published>2025-01-18T00:00:00Z</published>
         <updated>2025-01-18T00:00:00Z</updated>
-        <id>urn:uuid:05b53d5d-4b85-501a-c9e7-1cc0ae275755</id>
+        <id>urn:uuid:15b8cbb0-8ed6-5a73-c9bd-203c6d301892</id>
         
                 <author>
                     <name>Nicolas Greenwood</name>
