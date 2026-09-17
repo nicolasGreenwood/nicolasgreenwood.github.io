@@ -1,0 +1,89 @@
+{{ define "main" }}
+    {{ $post := . }}
+    {{ $imagePath := $post.Params.featured_image }}
+
+    {{ if $imagePath }}
+        {{ $original := $post.Resources.GetMatch $imagePath }}
+        {{ if $original }}
+
+        {{ $filters := slice 
+            (images.Grayscale) 
+            (images.GaussianBlur 24) 
+            (images.Brightness -20)
+            (images.Contrast -10)
+        }}
+
+        {{ $processed := $original | images.Filter $filters }}
+
+        {{ $bg_webp := $processed.Resize "640x webp q100" }}
+        <div class="poem-single-cont" style="--poem-bg-img: url({{ $bg_webp.RelPermalink }});">
+            <article class="poem-single-content">
+                <h1 class="poem-single-title">{{ .Title }}</h1>
+                <p class="poem-single-date">
+                    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
+                </p>
+                {{ .Content }}
+            </article>
+            {{ $webp := $original.Resize "720x webp q85" }}
+            <div class="poem-single-meta">
+                <img src='{{ $webp.RelPermalink }}' alt="{{ .Title }}" width="100%" class="poem-single-img">
+                <div>
+                    <h3>{{ i18n "about_this_poem" }}</h3>
+                    <p>
+                        {{ .Params.about_this_poem | safeHTML }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    {{ end }}
+
+    {{ $suggested_poems := where .CurrentSection.Pages "Permalink" "ne" .Permalink | shuffle | first 3 }}
+
+    {{ with $suggested_poems }}
+    <section class="suggested-poems-section">
+        
+        <div class="sps-title-cont">
+            <h2 class="sps-title">Read more:</h2>
+        </div>
+        
+        <div class="sps-cont">
+        {{ range . }}
+            <article class="suggested-poem">
+                <a href="{{ .RelPermalink }}">
+                    <h3 class="suggested-poem-title">{{ .Title }}</h3>
+                </a>
+                <div class="suggested-poem-date">
+                    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
+                </div>
+            </article>
+        {{ end }}
+        </div>
+    </section>
+    {{ end }}
+
+    {{ with site.GetPage "/subscribe-section" }}
+        <section class="subscribe-section">
+            <div class="subscribe-section-cont">
+                {{ .Content }}
+                <form
+                action="https://buttondown.com/api/emails/embed-subscribe/nicolasgreenwood"
+                method="post"
+                class="embeddable-buttondown-form"
+                >
+                <div class="email-input-cont">
+                    <label for="bd-email">{{ i18n "email_address" }}:</label>
+                    <input type="email" name="email" id="bd-email" placeholder="you@domain.com"/>
+                </div>
+                <input type="submit" value='{{ i18n "subscribe" }}' />
+                <p>
+                    <a href="https://buttondown.com/refer/nicolasgreenwood" target="_blank" class="pwrd-by-btndwn">
+                    {{ i18n "powered_by" (dict "Provider" "Buttondown") }}
+                    </a>
+                </p>
+                </form>
+            </div>
+        </section>
+    {{ end }}
+
+{{ end }}

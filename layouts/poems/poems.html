@@ -1,0 +1,83 @@
+{{ define "main" }}
+
+<main>
+  <h1 class="sr-only">{{ .Title }}</h1>
+
+  {{ $paginator := .Paginate .Pages 10 }}
+  <ul class="poem-list">
+    {{ range $index, $page := $paginator.Pages }}
+
+    {{ if and (eq $paginator.PageNumber 1) (eq $index 0) }}
+    <li>
+      {{ $post := . }}
+      {{ $imagePath := $post.Params.featured_image }}
+
+      {{ if $imagePath }}
+          {{ $original := $post.Resources.GetMatch $imagePath }}
+          {{ if $original }}
+
+          {{ $filters := slice 
+              (images.Grayscale) 
+              (images.GaussianBlur 24) 
+              (images.Brightness -20)
+              (images.Contrast -10)
+          }}
+
+          {{ $processed := $original | images.Filter $filters }}
+
+          {{ $bg_webp := $processed.Resize "640x webp q100" }}
+          <div class="poem-card latest" style="--poem-bg-img: url({{ $bg_webp.RelPermalink }});">
+              <article class="poem-card-content">
+                  <h1 class="poem-single-title">{{ .Title }}</h1>
+                  <p class="poem-single-date">
+                      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
+                  </p>
+                  {{ .Content }}
+                  <a href="{{ .RelPermalink }}" class="poem-card-link">
+                    {{ i18n "go_to_poem" }}
+                    <span>
+                      <svg style="vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" width="64" height="16" viewBox="0 0 64 16" fill="none">
+                        <path d="M1 8H56" stroke="black"/>
+                        <path d="M55.5 14C53.9999 12 56.0006 10 63.0005 8" stroke="currentColor"/>
+                        <path d="M55.4683 2C53.9682 4 55.9688 6 62.9688 8" stroke="currentColor"/>
+                      </svg>
+                    </span>
+                  </a>
+              </article>
+              {{ $webp := $original.Resize "720x webp q85" }}
+              <div class="poem-card-meta">
+                  <img src='{{ $webp.RelPermalink }}' alt="{{ .Title }}" width="100%" class="poem-single-img">
+                  <div>
+                      <h3>About this Poem:</h3>
+                      <p>
+                          {{ .Params.about_this_poem | safeHTML | strings.Truncate 150 "..." }}
+                      </p>
+                  </div>
+              </div>
+          </div>
+          {{ end }}
+      {{ end }}
+    </li>
+
+    {{ else }}
+
+    <li>
+      <article class="poem-card">
+        <a href="{{ .RelPermalink }}">
+            <h3 class="poem-card-title">{{ .Title }}</h3>
+        </a>
+        <div class="poem-card-date">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
+        </div>
+      </article>
+    </li>
+
+    {{ end }}
+
+  {{ end }}
+  </ul>
+
+  {{ partial "pagination.html" . }}
+
+</main>
+{{ end }}

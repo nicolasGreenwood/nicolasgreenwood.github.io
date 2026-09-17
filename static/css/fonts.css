@@ -1,0 +1,493 @@
+/* ==========================================
+   1. DINish (Normal Width)
+   ========================================== */
+
+/* 300 - Light */
+@font-face {
+    font-family: "DINish";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINish-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "DINish";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINish-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 400 - Regular */
+@font-face {
+    font-family: "DINish";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINish-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "DINish";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINish-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 500 - Medium */
+@font-face {
+    font-family: "DINish";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINish-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "DINish";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINish-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 600 - SemiBold */
+@font-face {
+    font-family: "DINish";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINish-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "DINish";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINish-SemiBoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 700 - Bold */
+@font-face {
+    font-family: "DINish";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINish-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "DINish";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINish-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 800 - Heavy */
+@font-face {
+    font-family: "DINish";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINish-Heavy.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "DINish";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINish-HeavyItalic.woff2") format("woff2");
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 900 - Black */
+@font-face {
+    font-family: "DINish";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINish-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "DINish";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINish-BlackItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* ==========================================
+     2. DINish Condensed
+     ========================================== */
+
+/* 300 - Light */
+@font-face {
+    font-family: "DINish Condensed";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishCondensed-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "DINish Condensed";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishCondensed-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 400 - Regular */
+@font-face {
+    font-family: "DINish Condensed";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishCondensed-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "DINish Condensed";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishCondensed-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 500 - Medium */
+@font-face {
+    font-family: "DINish Condensed";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishCondensed-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "DINish Condensed";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishCondensed-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 600 - SemiBold */
+@font-face {
+    font-family: "DINish Condensed";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishCondensed-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "DINish Condensed";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishCondensed-SemiBoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 700 - Bold */
+@font-face {
+    font-family: "DINish Condensed";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishCondensed-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "DINish Condensed";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishCondensed-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 800 - Heavy */
+@font-face {
+    font-family: "DINish Condensed";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishCondensed-Heavy.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "DINish Condensed";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishCondensed-HeavyItalic.woff2") format("woff2");
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 900 - Black */
+@font-face {
+    font-family: "DINish Condensed";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishCondensed-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "DINish Condensed";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishCondensed-BlackItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* ==========================================
+     3. DINish Expanded
+     ========================================== */
+
+/* 300 - Light */
+@font-face {
+    font-family: "DINish Expanded";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishExpanded-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "DINish Expanded";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishExpanded-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 400 - Regular */
+@font-face {
+    font-family: "DINish Expanded";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishExpanded-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "DINish Expanded";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishExpanded-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 500 - Medium */
+@font-face {
+    font-family: "DINish Expanded";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishExpanded-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "DINish Expanded";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishExpanded-MediumItalic.woff2") format("woff2");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 600 - SemiBold */
+@font-face {
+    font-family: "DINish Expanded";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishExpanded-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "DINish Expanded";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishExpanded-SemiBoldItalic.woff2") format("woff2");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 700 - Bold */
+@font-face {
+    font-family: "DINish Expanded";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishExpanded-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "DINish Expanded";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishExpanded-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 800 - Heavy */
+@font-face {
+    font-family: "DINish Expanded";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishExpanded-Heavy.woff2") format("woff2");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "DINish Expanded";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishExpanded-HeavyItalic.woff2") format("woff2");
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* 900 - Black */
+@font-face {
+    font-family: "DINish Expanded";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishExpanded-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "DINish Expanded";
+    src: url("/fonts/DINishVariable.woff2") format("woff2 supports variations"),
+        url("/fonts/DINishExpanded-BlackItalic.woff2") format("woff2");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* ==========================================
+   Cormorant Garamond
+   ========================================== */
+
+/* Light (300) */
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("/fonts/CormorantGaramond-VariableFont_wght.ttf")
+            format("truetype-variations"),
+        url("/fonts/CormorantGaramond-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("/fonts/CormorantGaramond-Italic-VariableFont_wght.ttf")
+            format("truetype-variations"),
+        url("/fonts/CormorantGaramond-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Regular (400) */
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("/fonts/CormorantGaramond-VariableFont_wght.ttf")
+            format("truetype-variations"),
+        url("/fonts/CormorantGaramond-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("/fonts/CormorantGaramond-Italic-VariableFont_wght.ttf")
+            format("truetype-variations"),
+        url("/fonts/CormorantGaramond-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Medium (500) */
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("/fonts/CormorantGaramond-VariableFont_wght.ttf")
+            format("truetype-variations"),
+        url("/fonts/CormorantGaramond-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("/fonts/CormorantGaramond-Italic-VariableFont_wght.ttf")
+            format("truetype-variations"),
+        url("/fonts/CormorantGaramond-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* SemiBold (600) */
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("/fonts/CormorantGaramond-VariableFont_wght.ttf")
+            format("truetype-variations"),
+        url("/fonts/CormorantGaramond-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("/fonts/CormorantGaramond-Italic-VariableFont_wght.ttf")
+            format("truetype-variations"),
+        url("/fonts/CormorantGaramond-SemiBoldItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Bold (700) */
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("/fonts/CormorantGaramond-VariableFont_wght.ttf")
+            format("truetype-variations"),
+        url("/fonts/CormorantGaramond-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Cormorant Garamond";
+    src: url("/fonts/CormorantGaramond-Italic-VariableFont_wght.ttf")
+            format("truetype-variations"),
+        url("/fonts/CormorantGaramond-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}

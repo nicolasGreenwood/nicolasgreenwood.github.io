@@ -1,0 +1,44 @@
+{{ define "main" }}
+<main class="programming-main-cont">
+    {{ with site.GetPage "programming/about" }}
+    <div class="large-body-text grid-col-1-3">
+        <p class="animate-text">
+        {{ .RawContent | safeHTML }}
+        </p>
+    </div>
+    {{ end }}
+    <div class="grid-col-4-5 profile-left animate-box">
+        <img src='{{ .Resources.GetMatch "/profile-left.png" }}' width="100%">
+    </div>
+    <hr class="grid-col-2-5 animate-box programming-hr">
+    {{ with site.GetPage "programming/technologies" }}
+    <div class="grid-col-1-5 subgrid">
+        {{ .Content }}
+    </div>
+    {{ end }}
+    <hr class="programming-hr animate-box grid-col-1-5">
+    <h2 class="grid-col-1-5 animate-box highlight-black">{{ i18n "some_of_my_work" }}</h2>
+    <ul class="grid-col-1-5 subgrid" style="padding: 0;">
+    {{ range .Pages }}
+        <li class="grid-col-1-5 subgrid">
+            <div class="grid-col-1-2">
+                <h3>
+                    <a href="{{ .RelPermalink }}" class="animate-text">{{ .Title }}</a>
+                </h3>
+                <p class="animate-text">{{ .Summary }}</p>
+            </div>
+            <div class="grid-col-2-5 animate-box">
+                {{ with .Resources.Get .Params.featured_image }}
+                <img src="{{ .RelPermalink }}" alt="cover for {{ .Title }}" width="100%" style="box-shadow: 0 2px 5px rgba(0,0,0,.3);">
+                {{ end }}
+            </div>
+        </li>
+    {{ end }}
+    </ul>
+    {{ with site.GetPage "programming/process" }}
+    <div class="grid-col-1-5 subgrid">
+        {{ .Content }}
+    </div>
+    {{ end }}
+</main>
+{{ end }}

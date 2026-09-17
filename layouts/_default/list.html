@@ -1,24 +1,20 @@
 {{ define "main" }}
+<main class="list-main-cont">
+    <h1 class="list-title">{{ .Title }}</h1>
 
-{{/* This template is for list of all publications in a Section */}}
-<div class="articles">
-    {{ with .Title }}<h1 class="page-title">{{ . }}</h1>{{ end }}
-
-    {{/* Render category content if any */}}
-    {{ with .Content }}
-        <div class="section-content">
-            {{ .Content }}
-        </div>
-    {{ end }}
-
-    {{/* Render posts list */}}
-    <div class="post-list">
-        {{ range .Paginator.Pages }}
-            {{ .Render "teaser" }}
+    {{ $paginator := .Paginate .Pages 10 }}
+    <ul class="list-ul">
+        {{ range $paginator.Pages }}
+        <li>
+            <a href="{{ .RelPermalink }}">
+              <h2>{{ .Title }}</h2>
+              <p>{{ .Content | plainify | strings.Truncate 250 "..." }}</p>
+              <time datetime="{{ .Date.Format "2006-01-02" }}" class="list-ul-date">
+                {{ .Date | time.Format ":date_long" }}
+              </time>
+            </a>
+        </li>
         {{ end }}
-
-        {{ partial "pagination.html" . }}
-    </div>
-</div>
-
+    </ul>
+</main>
 {{ end }}

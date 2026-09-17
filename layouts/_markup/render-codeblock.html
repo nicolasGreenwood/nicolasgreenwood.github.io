@@ -1,0 +1,11 @@
+{{- $id := printf "code-%x" (hash.FNV32a .Inner) -}}
+<div id="{{ $id }}" class="code-block-wrapper">
+  <button class="copy-code-button" data-clipboard-target="#{{ $id }} > div > pre > code">Copy</button>
+  {{- $opts := dict }}
+  {{- if not (transform.CanHighlight .Type) }}
+    {{- $opts = dict "type" "text" }}
+  {{- end }}
+  {{- $result := transform.HighlightCodeBlock . $opts }}
+  {{- $result.Wrapped -}}
+</div>
+

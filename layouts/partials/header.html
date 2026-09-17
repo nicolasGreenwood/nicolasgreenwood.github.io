@@ -1,0 +1,98 @@
+<header>
+  <div class="title-and-toggle">
+    <h1 class="site-title">
+      <a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+    </h1>
+  
+    <button id="menu-toggle">
+      <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" width="64" height="16" viewBox="0 0 64 16" fill="none">
+        <path d="M1 5H63" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+        <path d="M1 11H63" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+      </svg>
+      <svg class="hidden" id="icon-close" xmlns="http://www.w3.org/2000/svg" width="64" height="16" viewBox="0 0 64 16" fill="none">
+        <path d="M2 3L63.0581 13.7662" stroke="currentColor" stroke-linecap="round"/>
+        <path d="M2 13.7662L63.0581 2.99999" stroke="currentColor" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <nav id="site-nav" class="hidden">
+    <!-- Main Menu -->
+    <ul class="main-menu">
+      {{ range site.Menus.main }}
+        <li>
+          <a href="{{ .URL }}" {{ if $.IsMenuCurrent "main" . }}class="active"{{ end }}>
+            {{ .Name }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+    
+    <!-- Dropdown Language Switcher -->
+<div class="language-switcher-dropdown">
+  {{ $currentLang := .Lang }}
+
+  {{ range site.Languages }}
+    {{ if eq .Lang $currentLang }}
+      <button type="button" class="language-toggle hidden">
+        <span>
+          {{ .LanguageName }}
+          <svg class="lang-open-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+            <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/>
+          </svg>
+          <svg class="lang-close-icon hidden" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+          </svg>
+        </span>
+      </button>
+    {{ end }}
+  {{ end }}
+
+  <ul class="language-list hidden">
+    {{ range site.Languages }}
+      {{ $langCode := .Lang }}
+      {{ $langName := .LanguageName }}
+      
+      {{ if eq $langCode $currentLang }}
+        <li>
+          <a href="{{ $.RelPermalink }}" class="current-lang">
+            {{ $langName }}
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4CBB17" class="bi bi-check2" viewBox="0 0 16 16">
+              <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
+            </svg>
+          </a>
+        </li>
+      {{ else }}
+        {{ $targetURL := "" }}
+        {{ if $.IsTranslated }}
+          {{ range $.AllTranslations }}
+            {{ if eq .Lang $langCode }}
+              {{ $targetURL = .RelPermalink }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+        
+        {{ if not $targetURL }}
+          {{ with site.GetPage (printf "='/'" | printf "%s%s" "/" $langCode) }}
+          {{ end }}
+          {{ $targetURL = (site.GetPage (printf "section:%s" "")).Permalink }}
+        {{ end }}
+        
+        {{ $homePage := site.Home }}
+        {{ range site.Home.AllTranslations }}
+          {{ if eq .Lang $langCode }}
+            {{ $homePage = . }}
+          {{ end }}
+        {{ end }}
+        
+        {{ $finalURL := cond (ne $targetURL "") $targetURL $homePage.RelPermalink }}
+
+        <li>
+          <a href="{{ $finalURL }}">{{ $langName }}</a>
+        </li>
+        {{ end }}
+      {{ end }}
+      </ul>
+    </div>
+  </nav>
+</header>

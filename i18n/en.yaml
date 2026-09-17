@@ -1,0 +1,38 @@
+- id: featured_poem
+  translation: "Featured Poem"
+- id: subscribe
+  translation: "Subscribe"
+- id: email_address
+  translation: "Email address"
+- id: powered_by
+  translation: "Powered by {{ .Provider }}"
+- id: go_to_poem
+  translation: "Go to poem"
+- id: about_this_poem
+  translation: "About This Poem"
+- id: explore
+  translation: "Explore"
+- id: languages
+  translation: "Languages"
+- id: other
+  translation: "Other"
+- id: site_archive
+  translation: "Go to site archive"
+- id: manage_subscription
+  translation: "Manage your subscription"
+- id: newsletter_archive
+  translation: "Visit newsletter archive"
+- id: report_a_problem
+  translation: "Report a problem"
+- id: social
+  translation: "Social"
+- id: email
+  translation: "Email"
+- id: read_more
+  translation: "Read more"
+- id: back_to
+  translation: "Back to:"
+- id: all_rights_reserved
+  translation: "All rights reserved."
+- id: some_of_my_work
+  translation: "SOME OF MY WORK:"

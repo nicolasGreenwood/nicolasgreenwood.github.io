@@ -1,0 +1,29 @@
+{{ define "main" }}
+    <main class="page-main-cont">
+        <h1 class="page-title">{{ .Title }}</h1>
+
+        {{ $pages := where .Site.RegularPages "Section" "in" (slice "articles" "poems" "programming" "misc") }}
+
+        {{ range $pages.GroupByDate "2006" }}
+            <section>
+            <h2 style="margin-top: 2em; border-bottom: 2px solid;">{{ .Key }}:</h2>
+            <ul style="list-style-type: none; padding: 0;">
+                {{ range .Pages }}
+                <li style="margin: 1rem 0;">
+                    <a href="{{ .RelPermalink }}" style="color: blue; text-decoration: underline;">{{ .Title }}</a>
+                    <div class="list-ul-date" style="margin: 0.25rem 0;">
+                        <a href="{{ .CurrentSection.RelPermalink }}" style="text-decoration: underline;">{{ .CurrentSection.LinkTitle }}</a>
+                        •
+                        <time datetime="{{ .Date.Format "2006-01-02" }}">
+                            {{ .Date.Format "January 02" }}
+                        </time>
+                    </div>
+                </li>
+                {{ end }}
+            </ul>
+            </section>
+        {{ else }}
+            <p>No posts found.</p>
+        {{ end }}
+    </main>
+{{ end }}

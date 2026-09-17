@@ -1,0 +1,29 @@
+{{ define "main" }}
+<main class="page-main-cont">
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ .Content }}
+</main>
+{{ with site.GetPage "/subscribe-section" }}
+        <section class="subscribe-section">
+            <div class="subscribe-section-cont">
+                {{ .Content }}
+                <form
+                action="https://buttondown.com/api/emails/embed-subscribe/nicolasgreenwood"
+                method="post"
+                class="embeddable-buttondown-form"
+                >
+                <div class="email-input-cont">
+                    <label for="bd-email">{{ i18n "email_address" }}:</label>
+                    <input type="email" name="email" id="bd-email" placeholder="you@domain.com"/>
+                </div>
+                <input type="submit" value='{{ i18n "subscribe" }}' />
+                <p>
+                    <a href="https://buttondown.com/refer/nicolasgreenwood" target="_blank" class="pwrd-by-btndwn">
+                    {{ i18n "powered_by" (dict "Provider" "Buttondown") }}
+                    </a>
+                </p>
+                </form>
+            </div>
+        </section>
+    {{ end }}
+{{ end }}

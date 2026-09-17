@@ -1,0 +1,38 @@
+- id: featured_poem
+  translation: "Изабрана песма"
+- id: subscribe
+  translation: "Пријави се"
+- id: email_address
+  translation: "Имејл адреса"
+- id: powered_by
+  translation: "Омогућио {{ .Provider }}"
+- id: go_to_poem
+  translation: "Страница песме"
+- id: about_this_poem
+  translation: "Реч аутора"
+- id: explore
+  translation: "Истражите"
+- id: languages
+  translation: "Језици"
+- id: other
+  translation: "Oстало"
+- id: site_archive
+  translation: "Архива сајта"
+- id: manage_subscription
+  translation: "Управљај претплатом"
+- id: newsletter_archive
+  translation: "Архива билтена"
+- id: report_a_problem
+  translation: "Пријави проблем"
+- id: social
+  translation: "Пратите ме"
+- id: email
+  translation: "Имејл"
+- id: read_more
+  translation: "Прочитајте више"
+- id: back_to
+  translation: "Назад на:"
+- id: all_rights_reserved
+  translation: "Сва права задржана."
+- id: some_of_my_work
+  translation: "МОЈ РАД:"

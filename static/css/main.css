@@ -1,0 +1,1460 @@
+:root {
+    --black: #181818;
+    --white: #ffffff;
+    --yellow: oklch(79.5% 0.184 86.047);
+    --darkgray: #555555;
+    --lightgray: #a6a6a6;
+}
+
+body {
+    margin: 0;
+    font-family: "DINish", sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--lightgray);
+    margin: 3rem 0;
+}
+
+blockquote {
+    margin: 2rem 0;
+    padding-left: 1rem;
+    border-left: 4px solid var(--yellow);
+    color: var(--darkgray);
+    font-size: 1.25rem;
+}
+
+.code-block-wrapper {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    border-radius: 8px;
+    border: 1px solid #d7d7d7;
+    margin: 0.5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.code-block-wrapper > div > pre {
+    margin: 0;
+    overflow-x: auto;
+    padding: 1.2rem 1rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    overflow-x: auto;
+}
+
+.copy-code-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 4px;
+    font-family: "DINish", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.copy-code-button:hover {
+    filter: brightness(1.1);
+}
+
+.copy-code-button:active {
+    filter: brightness(1.2);
+}
+
+.sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.left-text {
+    text-align: left;
+}
+
+.right-text {
+    text-align: right;
+}
+
+.linkify-text, #TableOfContents {
+    color: blue;
+    text-decoration: underline;
+}
+
+#TableOfContents ul {
+    list-style-type: upper-roman;
+}
+
+#TableOfContents li > ul {
+    list-style-type: lower-roman;
+}
+
+#top-of-site-anchor {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: 100vh;
+    left: 0;
+}
+
+.top-of-site-link {
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99;
+    background-color: var(--yellow);
+    color: var(--black);
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    transition: .2s;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+}
+
+.top-of-site-link[data-visible=true] {
+    opacity: 1;
+    visibility:visible
+}
+
+.top-of-site-link:hover {
+    filter: brightness(1.1);
+}
+
+@media (max-width: 1024px) {
+    .top-of-site-link {
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+figure {
+    margin: 0.5rem 0;
+}
+
+figure img {
+    width: 100%;
+    display: block;
+}
+
+figure.float-left {
+    float: left;
+    width: 40%;
+    margin-right: 1.5rem;
+}
+
+figure.float-right {
+    float: right;
+    width: 60%;
+    margin-left: 1.5rem;
+}
+
+figure.block-image {
+    width: 50vw;
+}
+
+figcaption p {
+    margin: 0.3rem 0 0.7rem;
+    font-family: "DINish", sans-serif;
+    color: var(--darkgray);
+    font-size: 0.85rem;
+    font-style: italic;
+    letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 1024px) {
+    figure.float-left, 
+    figure.float-right,
+    figure.block-image {
+        float: none;
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
+
+/* Header */
+
+header {
+    background-color: var(--darkgray);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+    z-index: 999;
+}
+
+.title-and-toggle {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--white);
+    padding: 0.5rem;
+}
+
+.site-title {
+    margin: 0;
+    font-family: "DINish Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+#menu-toggle {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#site-nav {
+    position: absolute;
+    top: 100%;
+    background-color: inherit;
+    width: 100%;
+}
+
+.main-menu,
+.language-list {
+    list-style-type: none;
+    padding: 0;
+    font-family: "DINish Condensed", sans-serif;
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--lightgray);
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        flex-direction: row;
+        border-bottom: 1px solid var(--lightgray);
+    }
+
+    .site-title {
+        font-size: 2rem;
+        font-family: "DINish", sans-serif;
+        width: max-content;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .title-and-toggle {
+        padding: 1.5rem 1.5rem 0.5rem;
+        border: none;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    #site-nav {
+        display: flex;
+        justify-content: end;
+        position: static;
+    }
+
+    .main-menu {
+        display: flex;
+        justify-content: flex-end;
+        border: none;
+        padding: 0;
+    }
+
+    .main-menu > li > a,
+    .language-toggle {
+        box-sizing: border-box;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 2rem;
+        border-left: 1px solid var(--lightgray);
+    }
+
+    .main-menu > li > a:hover,
+    .language-toggle:hover,
+    .language-toggle.active,
+    .language-list > li > a:hover {
+        background-color: var(--yellow);
+        color: var(--black);
+    }
+
+    .main-menu > li > a.active {
+        text-decoration: underline;
+    }
+
+    .language-toggle {
+        position: relative;
+        cursor: pointer;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 0;
+        background-color: inherit;
+        color: inherit;
+        font-family: "DINish Condensed", sans-serif;
+        font-size: 1.25rem;
+    }
+
+    .language-list {
+        position: absolute;
+        top: calc(100% + 1px);
+        right: 0;
+        background-color: var(--darkgray);
+        padding: 0;
+    }
+
+    .language-list > li {
+        border-bottom: 1px solid var(--lightgray);
+    }
+
+    .language-list > li:last-of-type {
+        border-bottom: none;
+    }
+
+    .language-list > li > a {
+        display: block;
+        box-sizing: border-box;
+        padding-top: 1.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 3rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .language-list {
+        display: block;
+    }
+}
+
+/* The Hero Carousel */
+
+.hero-carousel {
+    width: 100%;
+    height: calc(100vh - 73px);
+    background-color: var(--black);
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) brightness(0.85) blur(1px);
+}
+
+.slide-info-card {
+    position: absolute;
+    bottom: 3rem;
+    left: 5rem;
+    z-index: 1;
+    padding: 24px;
+    max-width: 300px;
+    color: var(--white);
+}
+
+.slide-info-card:hover {
+    color: var(--yellow);
+}
+
+#scoop-mask {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    width: 100%; height: 100%;
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0 / 0.2));
+}
+
+.slide-card-title {
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.2;
+    color: var(--darkgray);
+    text-align: center;
+}
+
+.slide-card-summary {
+    color: var(--darkgray);
+    font-family: "DINish", sans-serif;
+    margin-bottom: 0;
+}
+
+.slide-card-meta {
+    color: var(--lightgray);
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.divider {
+    color: var(--lightgray);
+    margin: 0.5rem 0;
+    display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-carousel {
+        height: calc(100vw * 9 / 16);
+    }
+
+    .slide-info-card {
+        position: absolute !important;
+        max-width: 200px;
+        padding: 12px 8px;
+        left: 1rem;
+        bottom: -5rem;
+    }
+
+    .slide-card-title {
+        font-size: 1.5rem;
+        max-width: 80%;
+        margin: auto;
+        margin-bottom: 0.5rem;
+    }
+
+    .slide-card-summary {
+        font-size: 0.75rem;
+        margin: 0;
+    }
+
+    .slide-card-meta {
+        font-size: 0.9rem;
+    }
+    
+    .divider {
+        margin: 0.25rem 0;
+    }
+}
+
+@keyframes noise {
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+
+    10% {
+        background-position: -5% -10%;
+    }
+
+    20% {
+        background-position: -15% 5%;
+    }
+
+    30% {
+        background-position: 7% -25%;
+    }
+
+    40% {
+        background-position: 20% 25%;
+    }
+
+    50% {
+        background-position: -25% 10%;
+    }
+
+    60% {
+        background-position: 15% 5%;
+    }
+
+    70% {
+        background-position: 0% 15%;
+    }
+
+    80% {
+        background-position: 25% 35%;
+    }
+
+    90% {
+        background-position: -10% 10%;
+    }
+}
+
+/* Featured Poem Section */
+
+.featured-poem-section {
+    background-color: var(--darkgray);
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.fps-title-and-cover {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transform: translate(1rem, 1rem);
+    filter: drop-shadow(2px 2px 4px rgb(0 0 0 / 0.2));
+}
+
+.featured-poem-label {
+    display: inline-block;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--yellow);
+    text-transform: lowercase;
+    font-family: "DINish Expanded";
+    font-size: 1rem;
+}
+
+.featured-poem-img {
+    width: 100%;
+    filter: grayscale(100%);
+}
+
+.fps-poem-content {
+    width: 50%;
+    background-color: var(--white);
+    padding: 5rem;
+    box-sizing: border-box;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.25rem;
+    border-top: 4px solid var(--yellow);
+    box-shadow: 2px 2px 8px rgb(0 0 0 / 0.4);
+}
+
+.fps-poem-content h3 {
+    margin-top: 0;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.fps-link {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+    .featured-poem-section {
+        padding-top: 7rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        flex-direction: column;
+    }
+
+    .featured-poem-label {
+        font-size: 0.85rem;
+    }
+
+    .fps-poem-content {
+        width: 100%;
+        padding: 1.5rem;
+        padding-top: 3rem;
+        font-size: 1rem;
+    }
+
+    .fps-poem-content h3 {
+        font-size: 2rem;
+    }
+
+    .fps-title-and-cover {
+        width: calc(100% - 1.25rem);
+    }
+}
+
+/* About Section */
+
+.about-section {
+    background-color: var(--black);
+    color: var(--lightgray);
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.about-section-container {
+    width: 80%;
+    font-size: 1.1rem;
+}
+
+.about-section-title {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-size: 4rem;
+    font-style: italic;
+}
+
+.about-section-img {
+    float: left;
+    width: 37.5%;
+    margin-right: 5rem;
+}
+
+.about-section-img img {
+    width: 100%;
+}
+
+.about-section-link {
+    display: inline-block;
+    margin-top: 2rem;
+    background-color: var(--yellow);
+    color: var(--black);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+.about-section-link::after {
+    vertical-align: middle;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='16' viewBox='0 0 64 16' fill='none'%3E%3Cpath d='M1 8H56' stroke='%23000'/%3E%3Cpath d='M55.5 14C53.9999 12 56.0006 10 63.0005 8' stroke='%23000'/%3E%3Cpath d='M55.4683 2C53.9682 4 55.9688 6 62.9688 8' stroke='%23000'/%3E%3C/svg%3E");
+}
+
+@media screen and (max-width: 1024px) {
+
+    .about-section {
+        padding: 2rem 0;
+    }
+
+    .about-section-container {
+        width: calc(100% - 2rem);
+        font-size: 1rem;
+    }
+
+    .about-section-img {
+        width: 100%;
+    }
+
+    .about-section-title {
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+    }
+}
+
+/* Inorganic Matter Section */
+
+.inorganic-matter-section {
+    background-color: var(--darkgray);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5rem 0;
+}
+
+.inorganic-matter-section-img-cont {
+    width: 45%;
+}
+
+.inorganic-matter-section-img {
+    display: block;
+}
+
+.inorganic-matter-section-text-cont {
+    width: 35%;
+    background-color: var(--white);
+    padding: 2rem;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 8px rgb(0 0 0 / 0.4);
+    transform: translate(1rem, 1rem);
+    z-index: 1;
+    border-top: 4px solid var(--yellow);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+}
+
+.ims-label {
+    display: inline-block;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--yellow);
+    text-transform: lowercase;
+    font-family: "DINish Expanded";
+    font-size: 1rem;
+}
+
+.ims-link::after {
+    vertical-align: middle;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='16' viewBox='0 0 64 16' fill='none'%3E%3Cpath d='M1 8H56' stroke='%23000'/%3E%3Cpath d='M55.5 14C53.9999 12 56.0006 10 63.0005 8' stroke='%23000'/%3E%3Cpath d='M55.4683 2C53.9682 4 55.9688 6 62.9688 8' stroke='%23000'/%3E%3C/svg%3E");
+}
+
+.footnote {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1024px) {
+    .inorganic-matter-section {
+        flex-direction: column-reverse;
+        padding: 2rem 1rem;
+    }
+
+    .inorganic-matter-section-img-cont {
+        width: calc(100% - 1.25rem);
+        z-index: 1;
+        box-shadow: 2px 2px 8px rgb(0 0 0 / 0.4);
+        transform: translate(1rem, 1rem);
+    }
+
+    .inorganic-matter-section-text-cont {
+        width: 100%;
+        transform: none;
+        font-size: 1rem;
+    }
+
+    .inorganic-matter-section-text-cont blockquote {
+        font-size: 1rem;
+    }
+}
+
+/* Subscribe Section */
+
+.subscribe-section {
+    background-color: var(--lightgray);
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.subscribe-section-cont {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--white);
+    padding: 3rem 5rem;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 8px rgb(0 0 0 / 0.4);
+}
+
+.subscribe-section-cont p {
+    margin: 0;
+}
+
+.subscribe-title {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.subscribe-text {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.embeddable-buttondown-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.email-input-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-input-cont label {
+    font-family: "DINish Expanded", sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--darkgray);
+    margin-left: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.email-input-cont input {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    font-family: "DINish", sans-serif;
+    border: 1px solid var(--lightgray);
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.email-input-cont input:focus {
+    outline: 3px solid var(--yellow);
+}
+
+.subscribe-section-cont input[type="submit"] {
+    background-color: var(--yellow);
+    color: var(--black);
+    border: none;
+    font-family: "DINish", sans-serif;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.subscribe-section-cont input[type="submit"]:hover {
+    filter: brightness(105%);
+}
+
+.pwrd-by-btndwn {
+    font-size: 0.85rem;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+    .subscribe-section {
+        padding: 3rem 1rem;
+    }
+
+    .subscribe-section-cont {
+        width: 100%;
+        padding: 2rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .subscribe-title {
+        font-size: 2.5rem;
+    }
+
+    .subscribe-text {
+        font-size: 1rem;
+    }
+
+    .embeddable-buttondown-form {
+        gap: 1rem;
+    }
+
+    .email-input-cont input {
+        font-size: 1rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .subscribe-section-cont input[type="submit"] {
+        font-size: 1rem;
+    }
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--black);
+    color: var(--lightgray);
+    padding: 4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer * {
+    margin: 0;
+    list-style-type: none;
+}
+
+.footer-title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    border-bottom: 1px solid var(--lightgray);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 4rem;
+}
+
+.footer-grid-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-grid-cell h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-bottom: 1px solid var(--darkgray);
+}
+
+.footer-grid-cell ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+@media screen and (max-width: 1024px) {
+    footer {
+        padding: 2rem 1rem;
+    }
+
+    .footer-title {
+        font-family: "DINish Condensed", sans-serif;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    .footer-grid {
+        gap: 1.5rem;
+    }
+}
+
+/* Poem Single and Section Home Template */
+
+.poem-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.poem-single-cont,
+.poem-card.latest {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    background-image: var(--poem-bg-img);
+    background-size: cover;
+    background-position: center;
+}
+
+.poem-card.latest {
+    height: calc(100vh - 73px);
+    min-height: 640px;
+    align-items: stretch;
+}
+
+.poem-single-content,
+.poem-card-content {
+    position: relative;
+    width: 50%;
+    max-width: 64rem;
+    background-color: var(--white);
+    padding: 5rem;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 8px rgb(0 0 0 / 0.4);
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.25rem;
+}
+
+.poem-card-content {
+    overflow: hidden;
+}
+
+.poem-card-content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20rem;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(transparent 0%, var(--white) calc(100% - 7rem));
+    pointer-events: none;
+    z-index: 1;
+}
+
+.poem-card-link {
+    position: absolute;
+    
+    bottom: 5rem;
+    z-index: 1;
+}
+
+.poem-single-title {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poem-single-date {
+    color: var(--lightgray);
+    font-style: italic;
+}
+
+.poem-single-meta, .poem-card-meta {
+    width: 30%;
+    background-color: var(--white);
+    color: var(--darkgray);
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    border-top: 4px solid var(--yellow);
+    box-shadow: 2px 2px 8px rgb(0 0 0 / 0.4);
+    transform: translate(-1rem, 1rem);
+    z-index: 1;
+}
+
+.poem-card-meta {
+    align-self: flex-start;
+}
+
+.poem-single-meta img,
+.poem-card-meta img {
+    filter: grayscale(100%);
+}
+
+.poem-single-meta h3, 
+.poem-card-meta h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.poem-single-meta p, 
+.poem-card-meta p {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    color: var(--darkgray);
+}
+
+@media screen and (max-width: 1024px) {
+    .poem-single-cont, .poem-card.latest {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .poem-card.latest {
+        height: auto;
+    }
+
+    .poem-card-content {
+        max-height: 500px;
+    }
+
+    .poem-single-content, .poem-card-content {
+        width: 100%;
+        padding: 2rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .poem-single-title {
+        font-size: 2.5rem;
+    }
+
+    .poem-single-meta {
+        width: 100%;
+        transform: none;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .poem-single-meta p {
+        font-size: 1rem;
+    }
+
+    .poem-card-meta {
+        display: none;
+    }
+}
+
+.suggested-poems-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.sps-cont {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    gap: 0.5rem;
+    box-sizing: border-box;
+}
+
+.sps-title-cont {
+    width: 80%;
+    box-sizing: border-box;
+    border-bottom: 4px solid var(--yellow);
+}
+
+.sps-title {
+    display: inline-block;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    background-color: var(--yellow);
+    text-transform: lowercase;
+    font-family: "DINish Expanded";
+    font-size: 1rem;
+}
+
+.suggested-poem, .poem-card:not(.latest) {
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+    gap: 1rem;
+    border-bottom: 1px solid var(--lightgray);
+}
+
+.poem-card:not(.latest) {
+    width: 80%;
+    margin: 0.25rem auto;
+}
+
+.poem-list > li:nth-child(1 of :not(:has(.latest))) {
+    margin-top: 7rem;
+}
+
+.poem-list > li:last-of-type {
+    margin-bottom: 7rem;
+}
+
+.poem-list > li:not(:has(.latest)):only-child {
+    margin: 7rem auto;
+}
+
+.suggested-poem-title, .poem-card-title {
+    margin: 0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.suggested-poem-date, .poem-card-date {
+    color: var(--darkgray);
+    text-wrap: nowrap;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .suggested-poems-section {
+        padding: 3rem 1rem;
+    }
+
+    .sps-cont {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .sps-title-cont {
+        width: 100%;
+        padding: 0;
+    }
+
+    .suggested-poem-title, .poem-card-title {
+        font-size: 1.5rem;
+    }
+
+    .suggested-poem-date, .poem-card-date {
+        font-size: 0.85rem;
+    }
+
+    .poem-card:not(.latest) {
+        width: calc(100% - 2rem);
+    }
+
+    .poem-list > li:nth-child(1 of :not(:has(.latest))) {
+        margin-top: 3rem;
+    }
+    
+    .poem-list > li:last-of-type {
+        margin-bottom: 3rem;
+    }
+
+    .poem-list > li:only-of-type {
+        margin: 3rem auto;
+    }
+}
+
+/* Pagination */
+
+.pagination {
+    list-style-type: none;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.pagination > .page-item {
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-family: "DINish Expanded";
+    font-weight: 500;
+}
+
+.pagination > .page-item.disabled {
+    color: var(--lightgray);
+    pointer-events: none;
+}
+
+.pagination > .page-item.active {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+    .pagination > .page-item {
+        font-size: 1.1rem;
+    }
+}
+
+.page-main-cont, .list-main-cont {
+    width: 50%;
+    margin-left: 10%;
+    padding: 5rem 0;
+    font-size: 1.1rem;
+}
+
+.page-title, .list-title {
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .page-main-cont, .list-main-cont {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 2rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .page-title, .list-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.list-ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-ul li {
+    margin: 0;
+    cursor: pointer;
+    margin: 0 0 2rem;
+}
+
+.list-ul a {
+    text-decoration: none;
+}
+
+.list-ul li:hover h2 {
+    text-decoration: underline;
+}
+
+.list-ul li h2 {
+    margin: 0 0 0.5rem;
+}
+
+.list-ul li p {
+    margin: 0;
+    color: var(--darkgray);
+}
+
+.list-ul-date {
+    display: block;
+    margin: 1rem 0 0;
+    color: var(--darkgray);
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Article Single Template */
+
+.article-single-main-cont,
+.inorganic-matter-main-cont {
+    margin: 0 10%;
+    padding: 5rem 0;
+}
+
+.article-single-main-cont > p,
+.inorganic-matter-main-cont {
+    max-width: 50vw;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.35rem;
+}
+
+.article-single-main-cont > p:first-of-type:first-letter {
+    float: left;
+    font-size: 4em; 
+    line-height: 0.8;  
+    padding-right: 0.25rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+    .article-single-main-cont,
+    .inorganic-matter-main-cont {
+        margin: 0;
+        padding: 2rem 1rem;
+    }
+
+    .article-single-main-cont > p,
+    .inorganic-matter-main-cont {
+        max-width: 100%;
+        font-size: 1.2rem;
+    }
+}
+
+.about-page-portrait {
+    float: right;
+    width: 40%;
+    min-width: 150px;
+    margin-left: 1.5rem;
+    filter: grayscale(1);
+}
+
+/* Programming home page */
+
+.programming-main-cont {
+    padding: 2.5rem 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    column-gap: 1rem;
+    row-gap: 2rem;
+}
+
+.programming-main-cont .subgrid {
+    display: grid;
+    grid-template-columns: subgrid;
+    column-gap: 1rem;
+    row-gap: 2rem;
+}
+
+.grid-col-1-2 {
+    grid-column: 1 / 2;
+}
+
+.grid-col-1-3 {
+    grid-column: 1 / 3;
+}
+
+.grid-col-1-4 {
+    grid-column: 1 / 4;
+}
+
+.grid-col-1-5 {
+    grid-column: 1 / 5;
+}
+
+.grid-col-2-3 {
+    grid-column: 2 / 3;
+}
+
+.grid-col-2-4 {
+    grid-column: 2 / 4;
+}
+
+.grid-col-2-5 {
+    grid-column: 2 / 5;
+}
+
+.grid-col-3-4 {
+    grid-column: 3 / 4;
+}
+
+.grid-col-3-5 {
+    grid-column: 3 / 5;
+}
+
+.grid-col-4-5 {
+    grid-column: 4 / 5;
+}
+
+.large-body-text, .large-body-text * {
+    font-family: "DINish", sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-weight: 500;
+    margin: 0;
+}
+
+.large-body-text.a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.animate-text, .animate-box {
+    will-change: transform;
+    opacity: 0;
+}
+
+.animate-text *,
+.animate-box * {
+    will-change: transform;
+}
+
+.profile-left {
+    background-image: radial-gradient(#f4f4f4, #a8a8a8);
+    display: flex;
+    align-items: flex-end;
+    align-self: start;
+    width: 100%;
+}
+
+.profile-left > img {
+    width: 100%;
+}
+
+.highlight-black {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    justify-self: start;
+    margin: 0;
+}
+
+.programming-hr {
+    border-top: 2px solid black; 
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .programming-main-cont,
+    .programming-main-cont .subgrid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-col-1-2,
+    .grid-col-1-3,
+    .grid-col-1-4,
+    .grid-col-1-5,
+    .grid-col-2-3,
+    .grid-col-2-4,
+    .grid-col-2-5,
+    .grid-col-3-4,
+    .grid-col-3-5,
+    .grid-col-4-5 {
+        grid-column: 1 / 2;
+    }
+
+    .large-body-text, .large-body-text * {
+        font-size: 1.5rem;
+    }
+
+    .programming-main-cont h2 {
+        font-size: 1.2rem;
+    }
+}

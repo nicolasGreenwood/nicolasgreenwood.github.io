@@ -1,0 +1,36 @@
+- id: featured_poem
+  translation: "Izabrana pesma"
+- id: subscribe
+  translation: "Prijavi se"
+- id: email_address
+  translation: "Imejl adresa"
+- id: powered_by
+  translation: "Omogućio {{ .Provider }}"
+- id: go_to_poem
+  translation: "Stranica pesme"
+- id: about_this_poem
+  translation: "Reč autora"
+- id: explore
+  translation: "Istražite"
+- id: languages
+  translation: "Jezici"
+- id: other
+  translation: "Ostalo"
+- id: site_archive
+  translation: "Arhiva sajta"
+- id: manage_subscription
+  translation: "Upravljaj pretplatom"
+- id: newsletter_archive
+  translation: "Arhiva biltena"
+- id: report_a_problem
+  translation: "Prijavi problem"
+- id: social
+  translation: "Pratite me"
+- id: email
+  translation: "Imejl"
+- id: back_to
+  translation: "Nazad na:"
+- id: all_rights_reserved
+  translation: "Sva prava zadržana."
+- id: some_of_my_work
+  translation: "MOJ RAD:"

@@ -1,0 +1,146 @@
+{{ define "main" }}
+<main>
+  <div class="hero-carousel">
+    <div class="swiper-wrapper">     
+      {{ range (where (where .Site.RegularPages "Section" "in" (slice "articles" "poems" "programming" "misc")) "Params.carousel" true).ByDate.Reverse }}
+      <div class="swiper-slide">
+        {{ $post := . }}
+        {{ $imagePath := $post.Params.featured_image }}
+
+        {{ if $imagePath }}
+          {{ $original := $post.Resources.GetMatch $imagePath }}
+          {{ if $original }}
+            {{ $webp := $original.Resize "1920x webp q85" }}
+            <img 
+              src="{{ $webp.RelPermalink }}" 
+              width="100%" 
+              alt="{{ $post.Title }}"
+              loading="lazy"
+              decoding="async"
+            />
+          {{ else }}
+            <img src="{{ $imagePath }}" alt="{{ $post.Title }}" />
+          {{ end }}
+        {{ end }}
+
+        <a href="{{ .RelPermalink }}" class="slide-info-card">
+          <h3 class="slide-card-title">{{ .Title }}</h3>
+          <p class="slide-card-summary">{{ .Content | plainify | strings.Truncate 50 "..." }}</p>
+          <div class="divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 8" height="8px">
+              <g transform="translate(0 -1044.3622)">
+                <path id="a" fill="currentColor" fill-opacity="1" stroke="none" d="M186.84375 1046.1747S136.5 1048.8622 46.5 1048.8622c90 0 140.34375 2.6875 140.34375 2.6875s4.98697-2.4986 19.65625-2.6875c-14.66928-.1889-19.65625-2.6875-19.65625-2.6875z"/>
+                <path id="b" fill="none" stroke="currentColor" stroke-width="1" d="M5 1048.8622h195"/>
+                <path stroke="currentColor" fill="currentColor" d="M202.5 1048.8622a2.5 2.5 0 1 1-5 0 2.5 2.5 0 1 1 5 0z"/>
+                <use xlink:href="#a" width="400" height="8" transform="matrix(-1 0 0 1 400 0)"/>
+                <use xlink:href="#b" width="400" height="8" transform="matrix(-1 0 0 1 400 0)"/>
+              </g>
+            </svg>
+          </div>
+          <div class="slide-card-meta">
+            <span>{{ .CurrentSection.Title }}</span>
+            <span>•</span>
+            <time datetime='{{ .Date.Format "2006-01-02" }}'>{{ .Date | time.Format ":date_medium" }}</time>
+          </div>
+          <svg id="scoop-mask">
+            <mask id='m' fill='#fff'>
+              <rect id='r' width='100%' height='100%'/>
+              <circle id='c' r='24' fill='#000'/>
+              <use xlink:href='#c' x='100%'/>
+              <use xlink:href='#c' y='100%'/>
+              <use xlink:href='#c' x='100%' y='100%'/>
+            </mask>
+            <use xlink:href='#r' fill='currentColor' mask='url(#m)'/>
+          </svg>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+
+  {{ $poems := where site.RegularPages "Section" "poems" }}
+  {{ $featuredPoems := where $poems ".Params.tags" "intersect" (slice "featured") }}
+  {{ with index $featuredPoems 0 }}
+    <section class="featured-poem-section">
+      <div class="fps-title-and-cover">
+        <h2 class="featured-poem-label">{{ i18n "featured_poem" }}</h2>
+        {{ $post := . }}
+        {{ $imagePath := $post.Params.featured_image }}
+
+        {{ if $imagePath }}
+          {{ $original := $post.Resources.GetMatch $imagePath }}
+          {{ if $original }}
+            {{ $webp := $original.Resize "1920x webp q85" }}
+            <img 
+              src="{{ $webp.RelPermalink }}" 
+              width="100%" 
+              alt="{{ $post.Title }}"
+              loading="lazy"
+              decoding="async"
+              class="featured-poem-img"
+            />
+          {{ else }}
+            <img src="{{ $imagePath }}" alt="{{ $post.Title }}" />
+          {{ end }}
+        {{ end }}
+      </div>
+      <div class="fps-poem-content">
+        <h3>{{ .Title }}</h3>
+        {{ .Content }} 
+        <br>
+        <a href="{{ .RelPermalink }}" class="fps-link">{{ i18n "go_to_poem" }}</a>
+        <span>
+          <svg style="vertical-align: middle;" xmlns="http://www.w3.org/2000/svg" width="64" height="16" viewBox="0 0 64 16" fill="none">
+            <path d="M1 8H56" stroke="black"/>
+            <path d="M55.5 14C53.9999 12 56.0006 10 63.0005 8" stroke="currentColor"/>
+            <path d="M55.4683 2C53.9682 4 55.9688 6 62.9688 8" stroke="currentColor"/>
+          </svg>
+        </span>
+      </div>  
+    </section>
+  {{ end }}
+
+  {{ with site.GetPage "/home-about-section" }}
+    <section class="about-section">
+      <div class="about-section-container">
+        {{ .Content }}
+      </div>
+    </section>
+  {{ end }}
+
+  {{ with site.GetPage "/inorganic-matter-section" }}
+    <section class="inorganic-matter-section">
+        <div class="inorganic-matter-section-text-cont">
+          {{ .Content }}
+        </div>
+        <div class="inorganic-matter-section-img-cont">
+          <img src="/cover-jpeg.jpeg" alt="Printed book of poetry collection Inorganic Matter" class="inorganic-matter-section-img" width="100%">
+        </div>
+    </section>
+  {{ end }}
+
+  {{ with site.GetPage "/subscribe-section" }}
+    <section class="subscribe-section">
+      <div class="subscribe-section-cont">
+        {{ .Content }}
+        <form
+          action="https://buttondown.com/api/emails/embed-subscribe/nicolasgreenwood"
+          method="post"
+          class="embeddable-buttondown-form"
+        >
+          <div class="email-input-cont">
+            <label for="bd-email">{{ i18n "email_address" }}:</label>
+            <input type="email" name="email" id="bd-email" placeholder="you@domain.com"/>
+          </div>
+          <input type="submit" value='{{ i18n "subscribe" }}' />
+          <p>
+            <a href="https://buttondown.com/refer/nicolasgreenwood" target="_blank" class="pwrd-by-btndwn">
+              {{ i18n "powered_by" (dict "Provider" "Buttondown") }}
+            </a>
+          </p>
+        </form>
+      </div>
+    </section>
+  {{ end }}
+</main>
+{{ end }}
