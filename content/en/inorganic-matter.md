@@ -40,30 +40,6 @@ layout: inorganic-matter
 
 ---
 
-# Ackowledgements
-
-Mustering the courage to write this collection would not have been possible without the encouragement and inspiration of my family, friends, and mentors.
-
-First, I’d like to thank the City Library of Čačak for taking the time to read and promote my work. Their recognition was the first moment I felt my poetry was worthy of being presented in public, and it remains one of my greatest sources of encouragement to keep creating and sharing. I would also like to thank my friend Arakhsh Q. for his endless patience in reading and reflecting on so many of my poems, and my twin sister Anna for her unwavering support and understanding through every challenge I faced while writing this book.
-
-I would like to thank Piero Di Biase of Formula Type for generously granting me a free license to use his beautiful font Kunst Grotesk in the printed version of this collection. Designing the book was a true pleasure because of it.
-
-Lastly, I would like to thank my Serbian language teacher, Dr. Kristina P., to whom this collection is dedicated, for her endless encouragement and inspiration. Through her constant support and belief in each of her students, she has deeply shaped my work. Dear teacher, your love of language is contagious.
-
----
-
-## Author's note
-
-The title of this collection came to me suddenly one day, without warning, as I tried to think of a random set of words to use as filler text in a design project I was working on. From the moment I said it to myself, I couldn’t get it out of my head: Inorganic Matter. It sounded bold, unconventional—almost avant-garde. It felt like it was describing something new; some fresh, unusual perspective just waiting to take shape in a poem.
-
-Months later—after many of the poems in this collection were already written—I finally understood why this cold, clinical phrase refused to leave my thoughts. It perfectly expressed the chilling lifelessness hiding behind everything I saw and touched. All at once, I realized that all matter was once inorganic, and yet it has somehow become organic—able to live, observe, think, and even love.
-
-This realization fascinated me enough to title a collection after it. Not every poem in this book is explicitly about this transformation. But, if you take a closer look, perhaps that isn’t entirely true. Perhaps every poem ever written is, in some way, about a conscious experience of some sort. And perhaps, after reading that, you’ll see why I chose a title broad enough to hold even the most unrelated pieces together.
-
-Allow me a short piece of advice for reading this work. Poetry collections rarely read like novels, and this is no exception. Read a poem, and close the book. There is no need to fully understand it. Sometimes, all you need is a single line that feels insightful—or at least, relatable.
-
----
-
 ## Part 1: *Poems*
 
 ---
